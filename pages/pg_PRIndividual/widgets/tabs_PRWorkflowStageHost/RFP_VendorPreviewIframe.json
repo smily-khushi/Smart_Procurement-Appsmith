@@ -1,0 +1,47 @@
+{
+  "animateLoading": true,
+  "borderColor": "#DBE4EF",
+  "borderOpacity": 100,
+  "borderRadius": "0px 0px 7px 7px",
+  "borderWidth": 1,
+  "bottomRow": 186,
+  "bottomRowBeforeCollapse": 105,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isLoading": false,
+  "isVisible": "{{ [\"TEMPLATE_GENERATED\", \"SEND_RFP\", \"BID_MONITORING\"].includes(appsmith.store.selected_vendor_group?.STATUS) }}",
+  "key": "1afb3e447d",
+  "leftColumn": 0,
+  "mobileBottomRow": 90,
+  "mobileLeftColumn": 30,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 33,
+  "needsErrorInfo": false,
+  "originalBottomRow": 150,
+  "originalTopRow": 93,
+  "parentColumnSpace": 20.25,
+  "parentId": "v3901o4282",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "source": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+  "srcDoc": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    * {\n      box-sizing: border-box;\n      margin: 0;\n      padding: 0;\n    }\n    body {\n      background-color: #525659;\n      font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Arial, sans-serif;\n      display: flex;\n      justify-content: center;\n      padding: 24px 12px;\n      color: #1e293b;\n    }\n    /* PDF Paper Container */\n    .pdf-page {\n      background: #ffffff;\n      width: 100%;\n      max-width: 800px;\n      min-height: 1000px;\n      padding: 48px;\n      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);\n      border-radius: 2px;\n      display: flex;\n      flex-direction: column;\n      justify-content: space-between;\n    }\n    /* Header Section */\n    .header {\n      display: flex;\n      justify-content: space-between;\n      align-items: flex-start;\n      border-bottom: 2px solid #0f172a;\n      padding-bottom: 20px;\n      margin-bottom: 24px;\n    }\n    .brand-title {\n      font-size: 22px;\n      font-weight: 800;\n      color: #0f172a;\n      letter-spacing: -0.5px;\n    }\n    .brand-subtitle {\n      font-size: 12px;\n      color: #64748b;\n      margin-top: 2px;\n    }\n    .doc-status {\n      text-align: right;\n    }\n    .badge-pdf {\n      display: inline-block;\n      background-color: #dcfce7;\n      color: #166534;\n      font-size: 11px;\n      font-weight: 700;\n      padding: 4px 10px;\n      border-radius: 4px;\n      text-transform: uppercase;\n      letter-spacing: 0.5px;\n      margin-bottom: 6px;\n    }\n    .doc-id {\n      font-size: 12px;\n      color: #64748b;\n      font-weight: 500;\n    }\n    /* Meta Details Grid */\n    .meta-grid {\n      display: grid;\n      grid-template-columns: repeat(2, 1fr);\n      gap: 16px;\n      background-color: #f8fafc;\n      border: 1px solid #e2e8f0;\n      border-radius: 6px;\n      padding: 16px;\n      margin-bottom: 28px;\n    }\n    .meta-item {\n      font-size: 12px;\n    }\n    .meta-label {\n      color: #64748b;\n      font-weight: 500;\n      margin-bottom: 2px;\n    }\n    .meta-value {\n      color: #0f172a;\n      font-weight: 600;\n    }\n    /* Section Title */\n    .section-title {\n      font-size: 14px;\n      font-weight: 700;\n      color: #0f172a;\n      text-transform: uppercase;\n      letter-spacing: 0.5px;\n      margin-bottom: 12px;\n    }\n    /* Line Items Table */\n    .items-table {\n      width: 100%;\n      border-collapse: collapse;\n      margin-bottom: 28px;\n    }\n    .items-table th {\n      background-color: #f1f5f9;\n      color: #475569;\n      font-size: 11px;\n      font-weight: 700;\n      text-transform: uppercase;\n      letter-spacing: 0.5px;\n      text-align: left;\n      padding: 10px 12px;\n      border-bottom: 1px solid #cbd5e1;\n    }\n    .items-table td {\n      padding: 12px;\n      font-size: 13px;\n      color: #334155;\n      border-bottom: 1px solid #e2e8f0;\n    }\n    .text-right {\n      text-align: right;\n    }\n    /* Scope / Notes Section */\n    .scope-box {\n      font-size: 13px;\n      line-height: 1.6;\n      color: #475569;\n      margin-bottom: 28px;\n    }\n    /* Total / Summary Box */\n    .summary-container {\n      display: flex;\n      justify-content: flex-end;\n      margin-bottom: 32px;\n    }\n    .summary-table {\n      width: 260px;\n      font-size: 13px;\n    }\n    .summary-table td {\n      padding: 6px 0;\n    }\n    .total-row {\n      font-weight: 700;\n      font-size: 15px;\n      color: #0f172a;\n      border-top: 2px solid #0f172a;\n    }\n    /* Footer */\n    .pdf-footer {\n      border-top: 1px solid #e2e8f0;\n      padding-top: 16px;\n      display: flex;\n      justify-content: space-between;\n      align-items: center;\n      font-size: 11px;\n      color: #94a3b8;\n    }\n  </style>\n</head>\n<body>\n\n  <div class=\"pdf-page\">\n    <div>\n      <!-- Header -->\n      <div class=\"header\">\n        <div>\n          <div class=\"brand-title\">SmartProcure Buyer</div>\n          <div class=\"brand-subtitle\">Automated RFQ Specification Document</div>\n        </div>\n        <div class=\"doc-status\">\n          <span class=\"badge-pdf\">Draft Document</span>\n          <div class=\"doc-id\">RFQ Ref: #6000002164</div>\n        </div>\n      </div>\n\n      <!-- Metadata Grid -->\n      <div class=\"meta-grid\">\n        <div class=\"meta-item\">\n          <div class=\"meta-label\">Project Category</div>\n          <div class=\"meta-value\">Consulting Services</div>\n        </div>\n        <div class=\"meta-item\">\n          <div class=\"meta-label\">Created Date</div>\n          <div class=\"meta-value\">03 Jun, 2026</div>\n        </div>\n        <div class=\"meta-item\">\n          <div class=\"meta-label\">Buyer Contact</div>\n          <div class=\"meta-value\">Alex Morgan (Actaar)</div>\n        </div>\n        <div class=\"meta-item\">\n          <div class=\"meta-label\">Submission Deadline</div>\n          <div class=\"meta-value\">04 Jun, 2026 • 06:00 PM</div>\n        </div>\n      </div>\n\n      <!-- Scope of Work -->\n      <div class=\"section-title\">1. Scope of Work</div>\n      <div class=\"scope-box\">\n        The selected vendor will provide technical consulting services for enterprise architecture audit, multi-cloud optimization, and automated workflow integrations across procurement pipelines.\n      </div>\n\n      <!-- Line Items Table -->\n      <div class=\"section-title\">2. Cost Breakdown & Items</div>\n      <table class=\"items-table\">\n        <thead>\n          <tr>\n            <th>#</th>\n            <th>Item Description</th>\n            <th>Qty</th>\n            <th class=\"text-right\">Estimated Cost (₹)</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td>01</td>\n            <td>Architecture Review & Security Assessment</td>\n            <td>1</td>\n            <td class=\"text-right\">1,20,000.00</td>\n          </tr>\n          <tr>\n            <td>02</td>\n            <td>RPA & Pipeline Automation Consultation</td>\n            <td>1</td>\n            <td class=\"text-right\">85,000.00</td>\n          </tr>\n          <tr>\n            <td>03</td>\n            <td>SharePoint Sync Integration & Testing</td>\n            <td>1</td>\n            <td class=\"text-right\">32,594.34</td>\n          </tr>\n        </tbody>\n      </table>\n\n      <!-- Summary -->\n      <div class=\"summary-container\">\n        <table class=\"summary-table\">\n          <tr>\n            <td>Subtotal:</td>\n            <td class=\"text-right\">₹ 2,37,594.34</td>\n          </tr>\n          <tr>\n            <td>Taxes (Estimated):</td>\n            <td class=\"text-right\">Included</td>\n          </tr>\n          <tr class=\"total-row\">\n            <td>Total Budget:</td>\n            <td class=\"text-right\">₹ 2,37,594.34</td>\n          </tr>\n        </table>\n      </div>\n    </div>\n\n    <!-- Footer -->\n    <div class=\"pdf-footer\">\n      <span>Generated via SmartProcure Platform • Confidential</span>\n      <span>Page 1 of 1</span>\n    </div>\n  </div>\n\n</body>\n</html>",
+  "topRow": 93,
+  "topRowBeforeCollapse": 48,
+  "type": "IFRAME_WIDGET",
+  "version": 1,
+  "widgetId": "i1z3qsqxry",
+  "widgetName": "RFP_VendorPreviewIframe"
+}

@@ -1,0 +1,37 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 116,
+  "boxShadow": "none",
+  "buttonColor": "#001933",
+  "buttonVariant": "TERTIARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "iconName": "cloud-upload",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "y6m3pn28id",
+  "leftColumn": 31,
+  "minWidth": 50,
+  "mobileBottomRow": 114,
+  "mobileLeftColumn": 30,
+  "mobileRightColumn": 34,
+  "mobileTopRow": 110,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 13.386962890625,
+  "parentId": "vfdqz00ysb",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 34,
+  "topRow": 112,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "voush9ozkx",
+  "widgetName": "IconButton5"
+}

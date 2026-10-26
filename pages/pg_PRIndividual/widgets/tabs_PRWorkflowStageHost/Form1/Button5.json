@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 122,
+  "boxShadow": "none",
+  "buttonColor": "#001933",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "kxtp7ddgsk",
+  "leftColumn": 23,
+  "minWidth": 120,
+  "mobileBottomRow": 118,
+  "mobileLeftColumn": 24,
+  "mobileRightColumn": 40,
+  "mobileTopRow": 114,
+  "needsErrorInfo": false,
+  "onClick": "{{showModal(mdlDocument_Upload.name);}}",
+  "parentColumnSpace": 13.386962890625,
+  "parentId": "vfdqz00ysb",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 42,
+  "text": "Choose File",
+  "topRow": 116,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "d2h0zvbz59",
+  "widgetName": "Button5"
+}
