@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "bottomRow": 56,
+  "bottomRow": 68,
   "bottomRowBeforeCollapse": 51,
   "boxShadow": "none",
   "dynamicBindingPathList": [
@@ -31,8 +31,8 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "needsErrorInfo": false,
-  "originalBottomRow": 56,
-  "originalTopRow": 48,
+  "originalBottomRow": 68,
+  "originalTopRow": 60,
   "overflow": "NONE",
   "parentId": "7nmvv62rr0",
   "renderMode": "CANVAS",
@@ -43,7 +43,7 @@
   "text": "{{ js_SendRfpController.getKeyDetailsHtml() }}",
   "textAlign": "LEFT",
   "textType": "TEXT",
-  "topRow": 48,
+  "topRow": 60,
   "topRowBeforeCollapse": 43,
   "type": "TEXT_WIDGET",
   "version": 1,

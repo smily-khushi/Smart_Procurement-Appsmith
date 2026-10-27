@@ -1,0 +1,30 @@
+{
+  "animateLoading": true,
+  "bottomRow": 6,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "isLoading": false,
+  "isVisible": true,
+  "leftColumn": 24,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "needsErrorInfo": false,
+  "originalBottomRow": 6,
+  "originalTopRow": 1,
+  "parentId": "zc1drxoraz",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 33,
+  "text": "<div style=\"font-size: 13px; color: #64748b; margin-top: 2px;\">Contact No</div><div style=\"font-size: 15px; font-weight: 700; color: #0f172a;\">{{ (appsmith.store.vendor_contact_mobile || '+91 9876543210') }}</div>",
+  "topRow": 1,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "iaeqlng6yv",
+  "widgetName": "txt_GateHeaderCopyCopyCopy"
+}

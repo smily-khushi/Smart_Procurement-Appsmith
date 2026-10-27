@@ -140,7 +140,7 @@ export default {
 			columns: [
 				{
 					key: "requisition",
-					label: "PR No",
+					label: "No",
 					type: "link",
 					sortable: true,
 					searchable: true
@@ -270,9 +270,9 @@ export default {
 
 		const counts = {
 			manualRoute: allData.filter(r =>
-				(r.STATUS_CODE || '').toUpperCase().includes("MANUAL") ||
-				(r.STATUS_NAME || '').toUpperCase().includes("MANUAL")
-			).length,
+																	(r.STATUS_CODE || '').toUpperCase().includes("MANUAL") ||
+																	(r.STATUS_NAME || '').toUpperCase().includes("MANUAL")
+																 ).length,
 
 			consVendor:
 			this._countByStatus(allData, "PR_CONSISTENCY_CHECK") +

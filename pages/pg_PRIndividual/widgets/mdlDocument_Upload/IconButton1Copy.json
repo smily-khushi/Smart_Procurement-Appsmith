@@ -32,13 +32,13 @@
   "mobileTopRow": 0,
   "needsErrorInfo": false,
   "onClick": "{{closeModal(mdlDocument_Upload.name);}}",
-  "parentId": "zstsxk1sh1",
+  "parentId": "24hrrx7yo1",
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
   "rightColumn": 64,
   "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "4b33hg29dv",
+  "widgetId": "rrd1iyq239",
   "widgetName": "IconButton1Copy"
 }

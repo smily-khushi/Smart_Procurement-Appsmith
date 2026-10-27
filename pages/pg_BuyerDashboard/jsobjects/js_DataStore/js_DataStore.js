@@ -89,8 +89,8 @@ export default {
 	getRawData() {
 		const baseData = [
 			{
-				"PR_ID": "6000062364",
-				"REQUISITION_NUMBER": "6000062364",
+				"PR_ID": "1111",
+				"REQUISITION_NUMBER": "1111",
 				"REQUISITION_VALUE": "150000.00",
 				"STATUS_CODE": "PR_CONSISTENCY_CHECK",
 				"STATUS_NAME": "Consistency Check",
@@ -107,8 +107,8 @@ export default {
 				"ARC_COUNT": 0
 			},
 			{
-				"PR_ID": "6000062365",
-				"REQUISITION_NUMBER": "6000062365",
+				"PR_ID": "2222",
+				"REQUISITION_NUMBER": "2222",
 				"REQUISITION_VALUE": "45000.00",
 				"STATUS_CODE": "OAARC_CHECK",
 				"STATUS_NAME": "OA/ARC Check",
@@ -125,8 +125,8 @@ export default {
 				"ARC_COUNT": 0
 			},
 			{
-				"PR_ID": "6000062366",
-				"REQUISITION_NUMBER": "6000062366",
+				"PR_ID": "3333",
+				"REQUISITION_NUMBER": "3333",
 				"REQUISITION_VALUE": "800000.00",
 				"STATUS_CODE": "PR_CONSISTENCY_APPROVED",
 				"STATUS_NAME": "RFQ Generation",
@@ -143,8 +143,8 @@ export default {
 				"ARC_COUNT": 0
 			},
 			{
-				"PR_ID": "6000062367",
-				"REQUISITION_NUMBER": "6000062367",
+				"PR_ID": "4444",
+				"REQUISITION_NUMBER": "4444",
 				"REQUISITION_VALUE": "320000.00",
 				"STATUS_CODE": "MANUAL_ROUTE",
 				"STATUS_NAME": "Manual Route",

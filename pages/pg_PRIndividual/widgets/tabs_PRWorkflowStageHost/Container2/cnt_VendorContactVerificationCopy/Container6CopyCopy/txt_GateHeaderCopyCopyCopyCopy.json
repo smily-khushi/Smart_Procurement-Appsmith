@@ -1,0 +1,30 @@
+{
+  "animateLoading": true,
+  "bottomRow": 7,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "isLoading": false,
+  "isVisible": true,
+  "leftColumn": 33,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "needsErrorInfo": false,
+  "originalBottomRow": 7,
+  "originalTopRow": 0,
+  "parentId": "zc1drxoraz",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 47,
+  "text": "<div style=\"font-size: 13px; color: #64748b; margin-top: 2px;\">Email</div><div style=\"font-size: 15px; font-weight: 700; color: #0f172a;\">{{(appsmith.store.vendor_contact_email  || 'vendor.contact@example.com')}}</div>",
+  "topRow": 0,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "wvy7f8re7y",
+  "widgetName": "txt_GateHeaderCopyCopyCopyCopy"
+}

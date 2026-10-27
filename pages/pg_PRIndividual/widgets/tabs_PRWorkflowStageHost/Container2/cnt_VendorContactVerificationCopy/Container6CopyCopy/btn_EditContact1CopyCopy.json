@@ -1,16 +1,12 @@
 {
   "animateLoading": true,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 19,
-  "boxShadow": "none",
-  "buttonColor": "#2563eb",
+  "borderRadius": "1.5rem",
+  "bottomRow": 6,
+  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+  "buttonColor": "#ffffff",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
-  "dynamicBindingPathList": [
-    {
-      "key": "borderRadius"
-    }
-  ],
+  "dynamicBindingPathList": [],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
@@ -25,23 +21,24 @@
   "isDefaultClickDisabled": true,
   "isLoading": false,
   "isVisible": true,
+  "labelTextColor": "#3b82f6",
   "leftColumn": 54,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "needsErrorInfo": false,
-  "onClick": "{{ js_SendRfpController.proceedAndCreateRfp(); }}",
-  "originalBottomRow": 19,
-  "originalTopRow": 15,
-  "parentId": "rr10b3kd1u",
+  "onClick": "{{ showModal('mdl_EditVendorContact'); }}",
+  "originalBottomRow": 10,
+  "originalTopRow": 6,
+  "parentId": "zc1drxoraz",
   "placement": "CENTER",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 62,
-  "text": "Proceed and Create RFP →",
-  "topRow": 15,
+  "rightColumn": 63,
+  "text": "View / Edit",
+  "topRow": 2,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "wvrsk4qlc5",
-  "widgetName": "btn_ProceedAndCreateRfp"
+  "widgetId": "4bg9q5fszr",
+  "widgetName": "btn_EditContact1CopyCopy"
 }

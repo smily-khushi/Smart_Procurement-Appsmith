@@ -69,7 +69,7 @@ export default {
 		}
 
 		// 3. Unlocked: Ready to proceed!
-		return true;
+		return false;
 	},
 
 	getProceedButtonText() {

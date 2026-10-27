@@ -1,0 +1,30 @@
+{
+  "animateLoading": true,
+  "bottomRow": 6,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "isLoading": false,
+  "isVisible": true,
+  "leftColumn": 26,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "needsErrorInfo": false,
+  "originalBottomRow": 6,
+  "originalTopRow": 1,
+  "parentId": "i5zdbtk2zx",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 36,
+  "text": "<div style=\"font-size: 13px; color: #64748b; margin-top: 3px;\">Contact Person</div><div style=\"font-size: 15px; font-weight: 700; color: #0f172a;\">{{ appsmith.store.vendor_contact_person || 'Mr. Arjun Mehta' }}</div>",
+  "topRow": 1,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "qip2h0hbbx",
+  "widgetName": "txt_GateHeaderCopyCopy"
+}

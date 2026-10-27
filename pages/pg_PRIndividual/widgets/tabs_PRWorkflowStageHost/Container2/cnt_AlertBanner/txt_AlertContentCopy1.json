@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "bottomRow": 6,
+  "bottomRow": 8,
   "boxShadow": "none",
   "dynamicBindingPathList": [
     {
@@ -20,7 +20,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "needsErrorInfo": false,
-  "originalBottomRow": 6,
+  "originalBottomRow": 8,
   "originalTopRow": 0,
   "overflow": "NONE",
   "parentId": "i68spz88s8",

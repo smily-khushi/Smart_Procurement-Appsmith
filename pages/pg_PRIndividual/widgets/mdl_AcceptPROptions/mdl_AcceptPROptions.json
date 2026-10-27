@@ -3,7 +3,7 @@
   "canOutsideClickClose": true,
   "children": [
     {
-      "bottomRow": 370,
+      "bottomRow": 360,
       "dynamicBindingPathList": [],
       "dynamicHeight": "AUTO_HEIGHT",
       "leftColumn": 0,

@@ -3,7 +3,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 5,
   "boxShadow": "none",
-  "buttonColor": "#ffffff",
+  "buttonColor": "#dbeafe",
   "buttonVariant": "PRIMARY",
   "dynamicBindingPathList": [
     {
@@ -11,20 +11,20 @@
     }
   ],
   "dynamicTriggerPathList": [],
-  "iconName": "notifications",
+  "iconName": "phone",
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "vjkjlllqsy",
+  "key": "t2ap5tfs9l",
   "leftColumn": 0,
   "minWidth": 50,
   "mobileBottomRow": 5,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 3,
+  "mobileRightColumn": 2,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "parentColumnSpace": 15.6123046875,
-  "parentId": "rr10b3kd1u",
+  "parentColumnSpace": 28.5322265625,
+  "parentId": "zc1drxoraz",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
@@ -32,6 +32,6 @@
   "topRow": 1,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "aqesfly942",
-  "widgetName": "IconButton6"
+  "widgetId": "7c0vhv1dqc",
+  "widgetName": "IconButton6CopyCopyCopy"
 }

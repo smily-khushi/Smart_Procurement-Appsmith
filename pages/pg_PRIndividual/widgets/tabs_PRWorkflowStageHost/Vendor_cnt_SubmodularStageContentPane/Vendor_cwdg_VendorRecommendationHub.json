@@ -3,7 +3,7 @@
   "borderColor": "",
   "borderRadius": "0px",
   "borderWidth": "1",
-  "bottomRow": 71,
+  "bottomRow": 75,
   "boxShadow": "none",
   "defaultModel": "{{\n  (function() {\n    try {\n      return js_VendorRecommendationConfig.getWidgetModel();\n    } catch (e) {\n      // Safe fallback if JS object is missing or crashes\n      return {\n          aiBuckets: null,\n          isLocked: true,\n          footerState: 'EDITABLE',\n          sessionActionState: null,\n          allowCustomVendor: false,\n          allowCustomGroup: false\n      };\n    }\n  })()\n}}",
   "dynamicBindingPathList": [
@@ -56,7 +56,7 @@
   "onProceedToRfp": "{{ js_RFQGroupController.generateRFQ() }}",
   "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
   "onRetryRfp": "{{ js_RFQGroupController.retryRFQ() }}",
-  "originalBottomRow": 76,
+  "originalBottomRow": 77,
   "originalTopRow": 0,
   "parentColumnSpace": 27.671875,
   "parentId": "hpfyvk95eu",

@@ -1,5 +1,5 @@
 {
-  "bottomRow": 25,
+  "bottomRow": 24,
   "defaultOptionValue": "RFP_ARIBA",
   "dynamicBindingPathList": [],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -29,7 +29,7 @@
   "originalTopRow": 13,
   "parentId": "g3kzlyat97",
   "rightColumn": 61,
-  "topRow": 14,
+  "topRow": 13,
   "type": "RADIO_GROUP_WIDGET",
   "widgetId": "dvpfwesmh3",
   "widgetName": "rd_AcceptRoute"

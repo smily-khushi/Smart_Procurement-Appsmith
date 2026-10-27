@@ -5,12 +5,12 @@
   "borderColor": "",
   "borderRadius": "0px",
   "borderWidth": 0,
-  "bottomRow": 319,
+  "bottomRow": 157,
   "boxShadow": "none",
   "children": [
     {
       "borderRadius": "0px",
-      "bottomRow": 2850,
+      "bottomRow": 1190,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -51,7 +51,7 @@
     },
     {
       "borderRadius": "0px",
-      "bottomRow": 2850,
+      "bottomRow": 1230,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -92,7 +92,7 @@
     },
     {
       "borderRadius": "0px",
-      "bottomRow": 2850,
+      "bottomRow": 1190,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -174,7 +174,7 @@
     },
     {
       "animateLoading": true,
-      "bottomRow": 2850,
+      "bottomRow": 1190,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -203,7 +203,7 @@
       "widgetName": "Canvas_SendRFP_Tab"
     },
     {
-      "bottomRow": 2850,
+      "bottomRow": 1190,
       "canExtend": true,
       "dynamicBindingPathList": [],
       "dynamicTriggerPathList": [],
@@ -219,7 +219,7 @@
       "widgetName": "Canvas_BidMonitoring_Tab"
     },
     {
-      "bottomRow": 2850,
+      "bottomRow": 1340,
       "isLoading": false,
       "isVisible": true,
       "leftColumn": 0,
@@ -235,7 +235,7 @@
       "widgetName": "Canvas_TechEval_Tab"
     },
     {
-      "bottomRow": 2850,
+      "bottomRow": 1190,
       "isVisible": true,
       "leftColumn": 0,
       "parentId": "d1zguipsgn",
@@ -252,7 +252,7 @@
     {
       "backgroundColor": "#F5F7FA",
       "borderRadius": "0px",
-      "bottomRow": 2850,
+      "bottomRow": 1190,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -295,7 +295,7 @@
     {
       "backgroundColor": "#F5F7FA",
       "borderRadius": "0px",
-      "bottomRow": 2850,
+      "bottomRow": 1190,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -366,8 +366,8 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 25,
   "needsErrorInfo": false,
-  "originalBottomRow": 319,
-  "originalTopRow": 34,
+  "originalBottomRow": 157,
+  "originalTopRow": 38,
   "parentColumnSpace": 20.25,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -458,7 +458,7 @@
       "widgetId": "w0po9s5sdj"
     }
   },
-  "topRow": 34,
+  "topRow": 38,
   "type": "TABS_WIDGET",
   "version": 3,
   "widgetId": "d1zguipsgn",

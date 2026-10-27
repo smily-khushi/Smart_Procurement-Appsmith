@@ -29,7 +29,7 @@
     ],
     "name": "Select_public_users3",
     "pageId": "pg_PRIndividual",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
