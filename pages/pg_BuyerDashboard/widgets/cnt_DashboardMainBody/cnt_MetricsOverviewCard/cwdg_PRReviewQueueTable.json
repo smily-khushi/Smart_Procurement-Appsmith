@@ -40,7 +40,7 @@
   "originalBottomRow": 14,
   "originalTopRow": 0,
   "parentColumnSpace": 22.90625,
-  "parentId": "hoi6w1qqtt",
+  "parentId": "6fblrmzj1m",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 32,
@@ -59,6 +59,6 @@
     "js": "import React, { useState, useEffect } from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport ReactDOM from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\n\nfunction WelcomeHeader() {\n  const [model, setModel] = useState(appsmith.model || {});\n\n  useEffect(() => {\n    appsmith.onModelChange((newModel) => {\n      if (newModel) setModel(newModel);\n    });\n  }, []);\n\n  const {\n    department = \"SYSTEM\",\n    userName = \"User\",\n    welcomeMessage = \"Welcome\",\n    subtitle = \"Loading your dashboard...\",\n    totalPrCount\n  } = model;\n\n  return (\n    <div className=\"widget-container\">\n      <div className=\"welcome-header\">\n        <div className=\"eyebrow-row\">\n          <div className=\"eyebrow\">{department}</div>\n          {totalPrCount !== undefined && totalPrCount !== null && totalPrCount !== \"\" && (\n            <div className=\"badge\">\n              Total PR Count: <span className=\"badge-count\">{totalPrCount}</span>\n            </div>\n          )}\n        </div>\n        <h1 className=\"main-title\">{welcomeMessage}, {userName}.</h1>\n        <p className=\"subtitle\">{subtitle}</p>\n      </div>\n    </div>\n  );\n}\n\nappsmith.onReady(() => {\n  document.documentElement.style.overflow = 'hidden';\n  document.body.style.overflow = 'hidden';\n  ReactDOM.render(<WelcomeHeader />, document.getElementById('root'));\n});\n"
   },
   "version": 1,
-  "widgetId": "2g8umsircl",
+  "widgetId": "6ymplr60f8",
   "widgetName": "cwdg_PRReviewQueueTable"
 }

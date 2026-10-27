@@ -17,14 +17,19 @@
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "fontSize"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1.25rem",
+  "fontSize": "1.375rem",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
   "key": "nfwcsianpt",
-  "leftColumn": 50,
+  "leftColumn": 51,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -37,11 +42,11 @@
   "originalTopRow": 6,
   "overflow": "NONE",
   "parentColumnSpace": 2.66455078125,
-  "parentId": "jdq2luzorr",
+  "parentId": "3q3jx0ohcc",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 60,
+  "rightColumn": 61,
   "shouldTruncate": false,
   "text": "{{ js_DashboardWidgets.getDashboardTilesModel().errorCount }}",
   "textAlign": "CENTER",
@@ -50,6 +55,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "9pnhyc5hn4",
+  "widgetId": "bexgj6f4qn",
   "widgetName": "Text5"
 }

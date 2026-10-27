@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "0.375rem",
-  "bottomRow": 7,
+  "bottomRow": 6,
   "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
   "buttonColor": "#ffffff",
   "buttonVariant": "PRIMARY",
@@ -10,6 +10,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "onClick"
+    },
+    {
+      "key": "labelTextSize"
     }
   ],
   "dynamicTriggerPathList": [
@@ -25,8 +28,8 @@
   "isVisible": true,
   "key": "82809ztca0",
   "labelStyle": "BOLD",
-  "labelTextSize": "1rem",
-  "leftColumn": 58,
+  "labelTextSize": "0.775rem",
+  "leftColumn": 60,
   "minWidth": 120,
   "mobileBottomRow": 12,
   "mobileLeftColumn": 48,
@@ -35,7 +38,7 @@
   "needsErrorInfo": false,
   "onClick": "{{showModal(\"mdl_DashboardFilter\")}}",
   "parentColumnSpace": 16.1875,
-  "parentId": "hoi6w1qqtt",
+  "parentId": "6fblrmzj1m",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
@@ -44,9 +47,9 @@
   "responsiveBehavior": "hug",
   "rightColumn": 64,
   "text": "Filter",
-  "topRow": 3,
+  "topRow": 2,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "kl5qt92hc7",
+  "widgetId": "ob4ji4mcva",
   "widgetName": "Button2"
 }

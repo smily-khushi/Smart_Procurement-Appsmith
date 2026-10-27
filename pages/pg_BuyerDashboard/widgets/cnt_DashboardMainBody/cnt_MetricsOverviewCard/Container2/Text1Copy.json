@@ -22,7 +22,7 @@
   ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "0.775rem",
+  "fontSize": "0.75rem",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
@@ -38,7 +38,7 @@
   "needsErrorInfo": false,
   "overflow": "NONE",
   "parentColumnSpace": 13.484375,
-  "parentId": "jdq2luzorr",
+  "parentId": "3q3jx0ohcc",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -52,6 +52,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "vs0tsf1p32",
+  "widgetId": "2c7y9prj07",
   "widgetName": "Text1Copy"
 }

@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 6,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -13,7 +13,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicHeight": "FIXED",
+  "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
     {
       "key": "fontSize"
@@ -21,7 +21,7 @@
   ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "0.775rem",
+  "fontSize": "0.750rem",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
@@ -35,13 +35,16 @@
   "mobileRightColumn": 36,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
+  "originalBottomRow": 6,
+  "originalTopRow": 0,
   "overflow": "NONE",
   "parentColumnSpace": 22.765625,
-  "parentId": "jdq2luzorr",
+  "parentId": "3q3jx0ohcc",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 18,
+  "shouldScrollContents": true,
   "shouldTruncate": false,
   "text": "Total PR count",
   "textAlign": "CENTER",
@@ -50,6 +53,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "a8cfucgr4k",
+  "widgetId": "ebgcgda465",
   "widgetName": "txt_TotalPRCount"
 }
