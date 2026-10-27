@@ -50,10 +50,10 @@
   "responsiveBehavior": "fill",
   "rightColumn": 62,
   "serverSideFiltering": false,
-  "sourceData": "[\n  \n]",
+  "sourceData": "[\n  { \"name\": \"Advance Payment\", \"code\": \"ADVANCE\" },\n  { \"name\": \"Letter of Credit (LC)\", \"code\": \"LC\" },\n  { \"name\": \"Progress / Milestone Payments\", \"code\": \"MILESTONE\" },\n  { \"name\": \"Net 30 Days from Invoice\", \"code\": \"NET_30\" },\n  { \"name\": \"Net 60 Days from Invoice\", \"code\": \"NET_60\" },\n  { \"name\": \"Net 90 Days from Invoice\", \"code\": \"NET_90\" },\n  { \"name\": \"Payment Against Delivery (CAD / COD)\", \"code\": \"CAD\" },\n  { \"name\": \"100% Upon Final Acceptance / Handover\", \"code\": \"FINAL_ACCEPTANCE\" }\n]",
   "topRow": 2,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "7bx75zcnl9",
+  "widgetId": "sqjujdkmib",
   "widgetName": "Select1CopyCopy1"
 }

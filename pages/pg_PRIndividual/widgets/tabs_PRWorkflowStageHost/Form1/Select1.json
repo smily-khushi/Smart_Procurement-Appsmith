@@ -50,7 +50,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 30,
   "serverSideFiltering": false,
-  "sourceData": "[\n  \n]",
+  "sourceData": "[\n  { \"name\": \"0.5% per week (Max 5% of Contract Value)\", \"code\": \"0.5_WEEK_MAX_5\" },\n  { \"name\": \"0.5% per week (Max 10% of Contract Value)\", \"code\": \"0.5_WEEK_MAX_10\" },\n  { \"name\": \"1.0% per week (Max 10% of Contract Value)\", \"code\": \"1.0_WEEK_MAX_10\" },\n  { \"name\": \"0.1% per day (Max 5% of Contract Value)\", \"code\": \"0.1_DAY_MAX_5\" },\n  { \"name\": \"0.1% per day (Max 10% of Contract Value)\", \"code\": \"0.1_DAY_MAX_10\" },\n  { \"name\": \"As per Standard Conditions of Contract (SCC)\", \"code\": \"AS_PER_SCC\" },\n  { \"name\": \"Not Applicable (N/A)\", \"code\": \"NA\" }\n]",
   "topRow": 50,
   "type": "SELECT_WIDGET",
   "version": 1,

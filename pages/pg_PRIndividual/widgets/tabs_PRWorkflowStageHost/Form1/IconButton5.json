@@ -10,25 +10,35 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "iconName": "cloud-upload",
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
   "key": "y6m3pn28id",
-  "leftColumn": 58,
+  "leftColumn": 31,
   "minWidth": 50,
   "mobileBottomRow": 114,
   "mobileLeftColumn": 30,
   "mobileRightColumn": 34,
   "mobileTopRow": 110,
   "needsErrorInfo": false,
+  "onClick": "{{showModal(mdlDocument_Upload.name);}}",
   "parentColumnSpace": 13.386962890625,
   "parentId": "vfdqz00ysb",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 61,
+  "rightColumn": 34,
   "topRow": 112,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,

@@ -50,7 +50,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 62,
   "serverSideFiltering": false,
-  "sourceData": "[\n  \n]",
+  "sourceData": "[\n  { \"name\": \"Applicable - Internal Cost Estimate\", \"code\": \"INTERNAL_ESTIMATE\" },\n  { \"name\": \"Applicable - Third-Party Benchmarked\", \"code\": \"THIRD_PARTY\" },\n  { \"name\": \"Parametric / Bottom-Up Costing\", \"code\": \"BOTTOM_UP\" },\n  { \"name\": \"Not Applicable\", \"code\": \"NA\" }\n]",
   "topRow": 50,
   "type": "SELECT_WIDGET",
   "version": 1,

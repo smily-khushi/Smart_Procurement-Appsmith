@@ -4,7 +4,7 @@
   "borderColor": "#CBD5E1",
   "borderRadius": "6px",
   "borderWidth": "1",
-  "bottomRow": 192.0000000001927,
+  "bottomRow": 192.00000000014236,
   "boxShadow": "none",
   "children": [
     {
@@ -65,8 +65,8 @@
   "mobileRightColumn": 62.4,
   "mobileTopRow": 179.4,
   "needsErrorInfo": false,
-  "originalBottomRow": 192.0000000001928,
-  "originalTopRow": 185.00000000019347,
+  "originalBottomRow": 192.00000000014188,
+  "originalTopRow": 185.00000000014305,
   "parentColumnSpace": 20.25,
   "parentId": "hzqui7iv6b",
   "parentRowSpace": 10,
@@ -74,7 +74,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 62,
   "shouldScrollContents": false,
-  "topRow": 185.0000000001927,
+  "topRow": 185.00000000014236,
   "type": "CONTAINER_WIDGET",
   "version": 1,
   "widgetId": "jtmue6no99",

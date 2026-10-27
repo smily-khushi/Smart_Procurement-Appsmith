@@ -5,8 +5,8 @@
   "borderColor": "#dbe4ef",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 93,
-  "bottomRowBeforeCollapse": 93,
+  "bottomRow": 365,
+  "bottomRowBeforeCollapse": 406,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -566,6 +566,9 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "onSubmit"
     }
   ],
   "dynamicTriggerPathList": [
@@ -579,7 +582,7 @@
   "isLoading": false,
   "isVisible": "False",
   "key": "3a9cf70376",
-  "leftColumn": 7,
+  "leftColumn": 5,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -589,10 +592,10 @@
   "mobileTopRow": 26,
   "needsErrorInfo": false,
   "onSubmit": "{{showModal(mdl_RfqTemplateSubmit.name);}}",
-  "originalBottomRow": 93,
-  "originalTopRow": 48,
+  "originalBottomRow": 365,
+  "originalTopRow": 320,
   "parentColumnSpace": 19.125,
-  "parentId": "v3901o4282",
+  "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetButtonLabel": "Save Draft",
@@ -603,7 +606,7 @@
     "buttonVariant": "SECONDARY"
   },
   "responsiveBehavior": "fill",
-  "rightColumn": 52,
+  "rightColumn": 50,
   "schema": {
     "__root_schema__": {
       "accessor": "__root_schema__",
@@ -1979,11 +1982,11 @@
     "placement": "CENTER"
   },
   "title": "RFQ Data Review",
-  "topRow": 48,
-  "topRowBeforeCollapse": 48,
+  "topRow": 320,
+  "topRowBeforeCollapse": 361,
   "type": "JSON_FORM_WIDGET",
   "useSourceData": false,
   "version": 1,
-  "widgetId": "668ays6hdo",
+  "widgetId": "qfpk3y3brq",
   "widgetName": "RFP_JSONForm"
 }

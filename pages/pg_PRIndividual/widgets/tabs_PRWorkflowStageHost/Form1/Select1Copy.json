@@ -50,7 +50,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 30,
   "serverSideFiltering": false,
-  "sourceData": "[\n  \n]",
+  "sourceData": "[\n  { \"name\": \"EPC (Engineering, Procurement & Construction)\", \"code\": \"EPC\" },\n  { \"name\": \"Item Rate Contract\", \"code\": \"ITEM_RATE\" },\n  { \"name\": \"Lump Sum Turnkey (LSTK)\", \"code\": \"LSTK\" },\n  { \"name\": \"Rate Contract / Annual Maintenance (AMC)\", \"code\": \"RATE_CONTRACT\" },\n  { \"name\": \"Supply & Installation\", \"code\": \"SUPPLY_INSTALL\" },\n  { \"name\": \"Consultancy / Professional Services\", \"code\": \"CONSULTANCY\" }\n]",
   "topRow": 72,
   "type": "SELECT_WIDGET",
   "version": 1,
