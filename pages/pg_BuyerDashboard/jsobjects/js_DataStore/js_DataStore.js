@@ -89,8 +89,8 @@ export default {
 	getRawData() {
 		const baseData = [
 			{
-				"PR_ID": "6234",
-				"REQUISITION_NUMBER": "6234",
+				"PR_ID": "PR-NO-6234",
+				"REQUISITION_NUMBER": "PR-NO-6234",
 				"REQUISITION_VALUE": "150000.00",
 				"STATUS_CODE": "PR_CONSISTENCY_CHECK",
 				"STATUS_NAME": "Consistency Check",
@@ -107,8 +107,8 @@ export default {
 				"ARC_COUNT": 0
 			},
 			{
-				"PR_ID": "6235",
-				"REQUISITION_NUMBER": "6235",
+				"PR_ID": "PR-NO-6235",
+				"REQUISITION_NUMBER": "PR-NO-6235",
 				"REQUISITION_VALUE": "45000.00",
 				"STATUS_CODE": "OAARC_CHECK",
 				"STATUS_NAME": "OA/ARC Check",
@@ -125,8 +125,8 @@ export default {
 				"ARC_COUNT": 0
 			},
 			{
-				"PR_ID": "6236",
-				"REQUISITION_NUMBER": "6236",
+				"PR_ID": "PR-NO-6236",
+				"REQUISITION_NUMBER": "PR-NO-6236",
 				"REQUISITION_VALUE": "800000.00",
 				"STATUS_CODE": "PR_CONSISTENCY_APPROVED",
 				"STATUS_NAME": "RFQ Generation",
@@ -143,8 +143,8 @@ export default {
 				"ARC_COUNT": 0
 			},
 			{
-				"PR_ID": "6237",
-				"REQUISITION_NUMBER": "6237",
+				"PR_ID": "PR-NO-6237",
+				"REQUISITION_NUMBER": "PR-NO-6237",
 				"REQUISITION_VALUE": "320000.00",
 				"STATUS_CODE": "MANUAL_ROUTE",
 				"STATUS_NAME": "Manual Route",
@@ -160,8 +160,8 @@ export default {
 				"OA_COUNT": 0,
 				"ARC_COUNT": 0
 			},{
-				"PR_ID": "6238",
-				"REQUISITION_NUMBER": "6238",
+				"PR_ID": "PR-NO-6238",
+				"REQUISITION_NUMBER": "PR-NO-6238",
 				"REQUISITION_VALUE": "120000.00",
 				"STATUS_CODE": "BID_SUBMISSION",
 				"STATUS_NAME": "Bid Submission",
@@ -178,8 +178,8 @@ export default {
 				"ARC_COUNT": 0
 			},
 			{
-				"PR_ID": "6239",
-				"REQUISITION_NUMBER": "6239",
+				"PR_ID": "PR-NO-6239",
+				"REQUISITION_NUMBER": "PR-NO-6239",
 				"REQUISITION_VALUE": "275000.00",
 				"STATUS_CODE": "TECHNICAL_EVALUATION",
 				"STATUS_NAME": "Technical Evaluation",
@@ -196,8 +196,8 @@ export default {
 				"ARC_COUNT": 0
 			},
 			{
-				"PR_ID": "6240",
-				"REQUISITION_NUMBER": "6240",
+				"PR_ID": "PR-NO-6240",
+				"REQUISITION_NUMBER": "PR-NO-6240",
 				"REQUISITION_VALUE": "550000.00",
 				"STATUS_CODE": "COMMERCIAL_RFP",
 				"STATUS_NAME": "Commercial Evaluation - RFP 2",
@@ -214,8 +214,8 @@ export default {
 				"ARC_COUNT": 0
 			},
 			{
-				"PR_ID": "6241",
-				"REQUISITION_NUMBER": "6241",
+				"PR_ID": "PR-NO-6241",
+				"REQUISITION_NUMBER": "PR-NO-6241",
 				"REQUISITION_VALUE": "95000.00",
 				"STATUS_CODE": "PO_RELEASED",
 				"STATUS_NAME": "PO Released",

@@ -5,7 +5,7 @@
   "borderWidth": "",
   "bottomRow": 62,
   "boxShadow": "none",
-  "defaultModel": "{{ js_DashboardWidgets.getCategorySummaryModel() }}\n",
+  "defaultModel": "{{ js_DashboardWidgets.getCategorySummaryModel() }}",
   "dynamicBindingPathList": [
     {
       "key": "theme"
@@ -52,7 +52,7 @@
   "mobileRightColumn": 44,
   "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "onExport": "{{ download(cwdg_CategorySummaryHeader.model.csvData, \"Buyer_Dashboard_Export.csv\", \"text/csv\") }}\n",
+  "onExport": "{{ download(cwdg_CategorySummaryHeader.model.csvData, \"Buyer_Dashboard_Export.csv\", \"text/csv\") }}",
   "onReqNavigate": "{{ storeValue('selected_pr', cwdg_CategorySummaryHeader.model.selectedRequisition).then(() => storeValue('viewing_stage_id', null)).then(() => storeValue('demo_native_stage', null)).then(() => storeValue('active_pr_id', null)).then(() => storeValue('is_manual_route', false)).then(() => storeValue('manual_route_pr_id', null)).then(() => navigateTo('pg_PRIndividual')); }}",
   "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
   "parentColumnSpace": 23.21875,

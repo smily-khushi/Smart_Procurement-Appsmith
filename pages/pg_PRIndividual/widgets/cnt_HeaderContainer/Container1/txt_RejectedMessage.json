@@ -2,7 +2,7 @@
   "animateLoading": true,
   "backgroundColor": "#fca5a5",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 20,
+  "bottomRow": 24,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -52,7 +52,7 @@
   "text": "⚠️ This PR was rejected.",
   "textAlign": "LEFT",
   "textColor": "#0b1727",
-  "topRow": 16,
+  "topRow": 20,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
