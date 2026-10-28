@@ -3,7 +3,7 @@
   "borderColor": "",
   "borderRadius": "0px",
   "borderWidth": "",
-  "bottomRow": 14,
+  "bottomRow": 11,
   "boxShadow": "none",
   "defaultModel": "{\n  \"department\": \"\",\n  \"userName\": \"{{appsmith.store.active_buyer.name}}\",\n  \"welcomeMessage\": \"Welcome back\",\n  \"subtitle\": \"Manage your category's active protocols, pending evaluations, and RFQ releases.\"\n}",
   "dynamicBindingPathList": [

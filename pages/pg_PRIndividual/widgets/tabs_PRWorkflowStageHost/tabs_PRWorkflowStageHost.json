@@ -5,12 +5,12 @@
   "borderColor": "",
   "borderRadius": "0px",
   "borderWidth": 0,
-  "bottomRow": 148,
+  "bottomRow": 122,
   "boxShadow": "none",
   "children": [
     {
       "borderRadius": "0px",
-      "bottomRow": 1100,
+      "bottomRow": 880,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -51,7 +51,7 @@
     },
     {
       "borderRadius": "0px",
-      "bottomRow": 1230,
+      "bottomRow": 880,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -92,7 +92,7 @@
     },
     {
       "borderRadius": "0px",
-      "bottomRow": 1100,
+      "bottomRow": 910,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -174,7 +174,7 @@
     },
     {
       "animateLoading": true,
-      "bottomRow": 1100,
+      "bottomRow": 880,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -203,7 +203,7 @@
       "widgetName": "Canvas_SendRFP_Tab"
     },
     {
-      "bottomRow": 1100,
+      "bottomRow": 960,
       "canExtend": true,
       "dynamicBindingPathList": [],
       "dynamicTriggerPathList": [],
@@ -219,7 +219,7 @@
       "widgetName": "Canvas_BidMonitoring_Tab"
     },
     {
-      "bottomRow": 1310,
+      "bottomRow": 1080,
       "isLoading": false,
       "isVisible": true,
       "leftColumn": 0,
@@ -235,7 +235,7 @@
       "widgetName": "Canvas_TechEval_Tab"
     },
     {
-      "bottomRow": 1100,
+      "bottomRow": 1090,
       "isVisible": true,
       "leftColumn": 0,
       "parentId": "d1zguipsgn",
@@ -295,7 +295,7 @@
     {
       "backgroundColor": "#F5F7FA",
       "borderRadius": "0px",
-      "bottomRow": 1100,
+      "bottomRow": 950,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -366,8 +366,8 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 25,
   "needsErrorInfo": false,
-  "originalBottomRow": 171,
-  "originalTopRow": 38,
+  "originalBottomRow": 150,
+  "originalTopRow": 39,
   "parentColumnSpace": 20.25,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -458,7 +458,7 @@
       "widgetId": "w0po9s5sdj"
     }
   },
-  "topRow": 38,
+  "topRow": 34,
   "type": "TABS_WIDGET",
   "version": 3,
   "widgetId": "d1zguipsgn",

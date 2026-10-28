@@ -39,7 +39,7 @@
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
   "rightColumn": 64,
-  "text": "{{ appsmith.store.selected_pr.REQUISITION_NUMBER || appsmith.store.selected_pr.requisition }} | {{\n(() => {\n\t// 1. Grab the text from HEADER_NOTE (or fallback)\n\tlet rawText = appsmith.store.selected_pr.HEADER_NOTE || \"No Description\";\n\t// 2. Strip line breaks to keep the title clean on one line\n\tconst text = (rawText + \"\").replace(/[\\r\\n]+/g, ' ');\n\t// 3. Set your maximum character limit\n\tconst limit = 150; \n\t// 4. If it's too long, cut it and add \"...\", otherwise show full text\n\treturn text.length > limit \n\t\t? text.substring(0, limit).trim() + \"...\" \n\t: text;\n})()\n}}",
+  "text": "{{\n  (() => {\n    const pr = appsmith?.store?.selected_pr;\n    if (!pr) return \"No Requisition Selected\";\n\n    const reqNum = pr.REQUISITION_NUMBER || pr.requisition || \"PR-UNKNOWN\";\n    const rawText = pr.HEADER_NOTE || \"No Description\";\n    const cleanText = (rawText + \"\").replace(/[\\r\\n]+/g, ' ');\n    \n    const limit = 150;\n    const truncatedNote = cleanText.length > limit \n      ? cleanText.substring(0, limit).trim() + \"...\" \n      : cleanText;\n      \n    return `${reqNum} | ${truncatedNote}`;\n  })()\n}}",
   "tooltip": "{{  appsmith.store.selected_pr.requisition }} | {{appsmith.store.selected_pr.headernote || \"No Description\";\n}}",
   "topRow": 1,
   "type": "BUTTON_WIDGET",

@@ -3,7 +3,7 @@
   "borderColor": "",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 19,
+  "bottomRow": 15,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{{ js_NavigationController.getRibbonModel(appsmith.store.selected_vendor_group, appsmith.store.viewing_sourcing_round, appsmith.store.rfq_group_stages, appsmith.store.viewing_stage_id, appsmith.store.demo_native_stage) }}",
   "dynamicBindingPathList": [

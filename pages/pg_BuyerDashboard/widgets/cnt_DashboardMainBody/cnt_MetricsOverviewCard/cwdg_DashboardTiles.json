@@ -3,7 +3,7 @@
   "borderColor": "",
   "borderRadius": "0px",
   "borderWidth": "",
-  "bottomRow": 40,
+  "bottomRow": 41,
   "boxShadow": "none",
   "defaultModel": "{{js_DashboardWidgets.getDashboardTilesModel()}}\n ",
   "dynamicBindingPathList": [

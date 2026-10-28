@@ -3,11 +3,11 @@
   "borderColor": "transparent",
   "borderRadius": "0px",
   "borderWidth": 0,
-  "bottomRow": 108,
+  "bottomRow": 109,
   "boxShadow": "none",
   "children": [
     {
-      "bottomRow": 1080,
+      "bottomRow": 1090,
       "isVisible": true,
       "leftColumn": 0,
       "parentId": "94wv4521rb",
@@ -28,7 +28,7 @@
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 108,
+  "originalBottomRow": 109,
   "originalTopRow": 0,
   "parentId": "5nazf2ajrh",
   "renderMode": "CANVAS",

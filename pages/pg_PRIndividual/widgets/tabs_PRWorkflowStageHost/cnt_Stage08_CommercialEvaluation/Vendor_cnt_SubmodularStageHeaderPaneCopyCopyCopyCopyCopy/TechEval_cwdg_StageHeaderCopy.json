@@ -1,6 +1,6 @@
 {
   "borderRadius": "0px",
-  "bottomRow": 12,
+  "bottomRow": 13,
   "boxShadow": "none",
   "defaultModel": "{{\n  {\n    phaseBadge: \"STAGE 08 - Commercial Evaluation\",\n    roundPill: js_TechnicalEvaluationController.getRoundBadgeText(),\n    title: js_TechnicalEvaluationController.getGroupName(),\n    subtitle: \"RFQ-2026-000567\",\n    rightBadge: \"Completed\"\n  }\n}}",
   "dynamicBindingPathList": [

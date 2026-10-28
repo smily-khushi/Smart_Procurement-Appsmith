@@ -21,11 +21,11 @@
       "key": "onClick"
     }
   ],
-  "isDisabled": "{{appsmith.store.commercialComparisonGenerated === true}}",
+  "isDisabled": "{{appsmith.store.commercialComparisonGenerated === false}}",
   "isLoading": false,
   "isVisible": true,
   "leftColumn": 1,
-  "onClick": "{{ js_CommercialEvaluationController.generateComparisonSheet() }}",
+  "onClick": "{{js_CommercialEvaluationController.generateComparisonSheet()}}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
   "parentId": "45b50z6ayu",

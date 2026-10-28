@@ -4,7 +4,7 @@
   "borderColor": "#E2E8F0",
   "borderRadius": "8px",
   "borderWidth": "1",
-  "bottomRow": 127.99999999996314,
+  "bottomRow": 127.99999999998823,
   "bottomRowBeforeCollapse": 153.8,
   "boxShadow": "none",
   "cachedTableData": [
@@ -87,8 +87,8 @@
   "mobileRightColumn": 62.8,
   "mobileTopRow": 118.2,
   "needsErrorInfo": false,
-  "originalBottomRow": 127.99999999996726,
-  "originalTopRow": 111.00000000005247,
+  "originalBottomRow": 127.99999999998181,
+  "originalTopRow": 111.0000000000766,
   "parentColumnSpace": 7.5,
   "parentId": "hzqui7iv6b",
   "parentRowSpace": 10,
@@ -330,7 +330,7 @@
     }
   ],
   "textSize": "0.68rem",
-  "topRow": 111.00000000004874,
+  "topRow": 111.00000000008447,
   "topRowBeforeCollapse": 138,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",

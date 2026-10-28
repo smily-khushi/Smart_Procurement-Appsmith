@@ -81,22 +81,57 @@ export default {
 	// async generateComparisonSheet() {
 		// showAlert('Commercial Comparison Sheet generated successfully.', 'success');
 	// },
-// Comparison Sheet Generation
+
 async generateComparisonSheet() {
+    try {
+        const data = this.getCommercialTableData();
 
-  // Prevent the action from running more than once
-  if (appsmith.store.commercialComparisonGenerated === true) {
-    return;
-  }
+        if (!data || data.length === 0) {
+            showAlert("No data available to export.", "warning");
+            return;
+        }
 
-  // Mark as generated — this will disable the button
-  await storeValue("commercialComparisonGenerated", true,false);
+        const headers = [
+            { key: "rank", label: "Rank" },
+            { key: "vendorName", label: "Vendor Name" },
+            { key: "paymentTerms", label: "Payment Terms" },
+            { key: "slNo", label: "SL No" },
+            { key: "quotedAmount", label: "Quoted Amount" },
+            { key: "discount", label: "Discount" },
+            { key: "finalCommercial", label: "Final Commercial Amount" },
+            { key: "deliveryTimeline", label: "Delivery Timeline" }
+        ];
 
-  showAlert(
-    "Commercial Comparison Sheet generated successfully.",
-    "success"
-  );
+        const escapeCSV = (value) =>
+            '"' + String(value ?? "").replace(/"/g, '""') + '"';
+
+        const csvRows = [
+            headers.map(h => escapeCSV(h.label)).join(","),
+            ...data.map(row =>
+                headers.map(h => escapeCSV(row[h.key])).join(",")
+            )
+        ];
+
+        const csvContent = "\uFEFF" + csvRows.join("\r\n");
+
+        // Download CSV to the user's computer
+        download(
+            csvContent,
+            "Commercial_Comparison_Sheet.csv",
+            "text/csv"
+        );
+
+        showAlert(
+            "Commercial Comparison Sheet download started. Check Chrome Downloads.",
+            "success"
+        );
+
+    } catch (error) {
+        console.error("CSV download error:", error);
+        showAlert("CSV download failed. Please check the Debug panel.", "error");
+    }
 },
+
 	// Commercial Summary Table Data
 	getCommercialTableData() {
 		return [
