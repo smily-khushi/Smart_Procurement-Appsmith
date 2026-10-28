@@ -58,7 +58,7 @@
   "onAttachmentClick": "{{navigateTo(cwdg_WorkflowHeaderRibbon.model.selectedAttachmentUrl, {}, 'NEW_WINDOW')}}",
   "onRoundSelect": "{{ js_NavigationController.handleRoundSelect(cwdg_WorkflowHeaderRibbon.model.selectedRoundNumber) }}",
   "onStageSelect": "{{ js_NavigationController.handleStageSelect(cwdg_WorkflowHeaderRibbon.model.selectedStageId) }}",
-  "originalBottomRow": 20,
+  "originalBottomRow": 15,
   "originalTopRow": 0,
   "parentColumnSpace": 20.25,
   "parentId": "2nj5rkitiv",

@@ -53,7 +53,7 @@
   "mobileTopRow": 2,
   "needsErrorInfo": false,
   "onExport": "{{ download(cwdg_CategorySummaryHeader.model.csvData, \"Buyer_Dashboard_Export.csv\", \"text/csv\") }}\n",
-  "onReqNavigate": "{{\n  (async () => {\n    const selectedReq = cwdg_CategorySummaryHeader?.model?.selectedRequisition;\n    \n    // 1. Store all your values sequentially with await\n    await storeValue('selected_pr', selectedReq);\n    await storeValue('viewing_stage_id', null);\n    await storeValue('demo_native_stage', null);\n    await storeValue('active_pr_id', null);\n    await storeValue('is_manual_route', false);\n    await storeValue('manual_route_pr_id', null);\n    \n    // 2. Navigate only after everything is safely stored\n    await navigateTo('pg_PRIndividual');\n  })()\n}}",
+  "onReqNavigate": "{{ storeValue('selected_pr', cwdg_CategorySummaryHeader.model.selectedRequisition).then(() => storeValue('viewing_stage_id', null)).then(() => storeValue('demo_native_stage', null)).then(() => storeValue('active_pr_id', null)).then(() => storeValue('is_manual_route', false)).then(() => storeValue('manual_route_pr_id', null)).then(() => navigateTo('pg_PRIndividual')); }}",
   "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
   "parentColumnSpace": 23.21875,
   "parentId": "6vln7qve9d",

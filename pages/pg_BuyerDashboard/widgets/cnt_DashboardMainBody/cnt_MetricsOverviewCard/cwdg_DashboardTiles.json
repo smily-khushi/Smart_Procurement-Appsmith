@@ -42,7 +42,7 @@
   "mobileTopRow": 35,
   "needsErrorInfo": false,
   "onTileClick": "{{ storeValue('tileFilter', cwdg_DashboardTiles.model.clickedFilter) }}",
-  "originalBottomRow": 40,
+  "originalBottomRow": 41,
   "originalTopRow": 14,
   "parentColumnSpace": 26.890625,
   "parentId": "6fblrmzj1m",

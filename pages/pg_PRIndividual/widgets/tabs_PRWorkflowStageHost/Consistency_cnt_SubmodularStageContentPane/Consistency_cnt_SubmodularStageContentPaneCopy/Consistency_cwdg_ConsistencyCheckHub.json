@@ -47,7 +47,7 @@
   "needsErrorInfo": false,
   "onAccept": "{{ showModal(mdl_AcceptPROptions.name); }}{{ showModal(mdl_AcceptPROptions.name); }}",
   "onReject": "{{ js_NavigationController.handleConsistencyReject(Consistency_cwdg_ConsistencyCheckHub.model.rejectionComment) }}\n",
-  "originalBottomRow": 104,
+  "originalBottomRow": 67,
   "originalTopRow": 43,
   "parentColumnSpace": 27.671875,
   "parentId": "7ag2mzq824",
