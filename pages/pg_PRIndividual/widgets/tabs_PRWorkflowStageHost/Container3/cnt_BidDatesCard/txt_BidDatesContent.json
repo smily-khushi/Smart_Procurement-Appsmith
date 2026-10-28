@@ -31,7 +31,7 @@
   "parentId": "pefflpk52n",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 63,
   "shouldScrollContents": true,
   "shouldTruncate": false,
   "text": "{{ js_BidMonitoringController.getDatesHtml() }}",

@@ -23,7 +23,7 @@
   "isVisible": true,
   "leftColumn": 0,
   "needsErrorInfo": false,
-  "onClick": "{{ js_BidMonitoringController.onAddVendorsClick() }}",
+  "onClick": "{{ js_BidMonitoringController.onAddVendorsClick() || showModal('mdl_AddVendor')}}",
   "parentId": "fiesxhfger",
   "placement": "START",
   "renderMode": "CANVAS",

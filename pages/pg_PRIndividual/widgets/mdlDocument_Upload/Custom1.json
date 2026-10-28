@@ -47,7 +47,7 @@
   "mobileTopRow": 9,
   "needsErrorInfo": false,
   "onCancelClick": "{{closeModal(mdlDocument_Upload.name).then(() => {\n  closeModal(mdlDocument_Upload.name);\n}).catch(() => {});}}",
-  "onResetClick": "{{showAlert('Successfully reset!!', '');\nJSObject1.Custom1onResetClick();}}",
+  "onResetClick": "{{showAlert('Successfully reset!!', '');\njs_TechnicalEvaluationControll.Custom1onResetClick();}}",
   "onSaveClick": "{{ showAlert('saved', 'success').then(() => { \n  closeModal(mdlDocument_Upload.name); \n  storeValue('savedDocumentData', Custom1.model.formSelections); \n  showAlert(JSON.stringify(Custom1.model.formSelections), ''); \n}); }}",
   "originalBottomRow": 68,
   "originalTopRow": 8,

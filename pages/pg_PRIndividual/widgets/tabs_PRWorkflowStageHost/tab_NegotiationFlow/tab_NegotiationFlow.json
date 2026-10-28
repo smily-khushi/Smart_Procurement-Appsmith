@@ -5,13 +5,13 @@
   "borderColor": "",
   "borderRadius": "0px",
   "borderWidth": 0,
-  "bottomRow": 91,
+  "bottomRow": 95,
   "boxShadow": "none",
   "children": [
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 910,
+      "bottomRow": 950,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -97,7 +97,7 @@
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 910,
+      "bottomRow": 950,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -269,7 +269,7 @@
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 940,
+      "bottomRow": 950,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -441,7 +441,7 @@
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 910,
+      "bottomRow": 950,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -511,7 +511,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 91,
+  "originalBottomRow": 95,
   "originalTopRow": 0,
   "parentColumnSpace": 19.5,
   "parentId": "9p4oaqqoef",

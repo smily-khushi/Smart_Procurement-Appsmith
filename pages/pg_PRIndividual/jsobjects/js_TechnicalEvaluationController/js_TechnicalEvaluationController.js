@@ -76,6 +76,7 @@ export default {
 				reviewedBy: 'Technical Team',
 				reviewedOn: '02 Jun 2026',
 				technicalEvaluationStatus: 'Qualified',
+				evaluatorComments: 'All technical specifications and ISO certifications verified successfully.',
 				compliance: {
 					overallStatus: 'Compliant',
 					badgeBg: '#ecfdf5',
@@ -113,6 +114,7 @@ export default {
 				reviewedBy: 'Technical Team',
 				reviewedOn: '02 Jun 2026',
 				technicalEvaluationStatus: 'Qualified',
+				evaluatorComments: 'Strong CAD drawings and warranty undertakings provided.',
 				compliance: {
 					overallStatus: 'Compliant',
 					badgeBg: '#ecfdf5',
@@ -150,6 +152,7 @@ export default {
 				reviewedBy: 'Technical Team',
 				reviewedOn: '02 Jun 2026',
 				technicalEvaluationStatus: 'Qualified',
+				evaluatorComments: 'Meets all API 6D standards with solid material test reports.',
 				compliance: {
 					overallStatus: 'Compliant',
 					badgeBg: '#ecfdf5',
@@ -187,6 +190,7 @@ export default {
 				reviewedBy: 'Technical Team',
 				reviewedOn: '02 Jun 2026',
 				technicalEvaluationStatus: 'Qualified',
+				evaluatorComments: 'Engineering sizing sheets and factory acceptance logs verified.',
 				compliance: {
 					overallStatus: 'Compliant',
 					badgeBg: '#ecfdf5',
@@ -224,6 +228,7 @@ export default {
 				reviewedBy: 'Technical Team',
 				reviewedOn: '02 Jun 2026',
 				technicalEvaluationStatus: 'Qualified',
+				evaluatorComments: 'Inspection plans and type test reports are fully satisfactory.',
 				compliance: {
 					overallStatus: 'Compliant',
 					badgeBg: '#ecfdf5',
@@ -261,6 +266,7 @@ export default {
 				reviewedBy: 'Technical Team',
 				reviewedOn: '02 Jun 2026',
 				technicalEvaluationStatus: 'Rejected',
+				evaluatorComments: 'Rejected due to incomplete datasheets and expired ISO certificates.',
 				compliance: {
 					overallStatus: 'Non-Compliant',
 					badgeBg: '#fef2f2',
@@ -298,6 +304,7 @@ export default {
 				reviewedBy: 'Technical Team',
 				reviewedOn: '02 Jun 2026',
 				technicalEvaluationStatus: 'Resolved in R2',
+				evaluatorComments: 'Queries resolved successfully during Round 2 review.',
 				compliance: {
 					overallStatus: 'Compliant',
 					badgeBg: '#ecfdf5',
@@ -335,6 +342,7 @@ export default {
 				reviewedBy: 'Technical Team',
 				reviewedOn: '02 Jun 2026',
 				technicalEvaluationStatus: 'Rejected',
+				evaluatorComments: 'Failed to provide necessary technical bids and quality certifications.',
 				compliance: {
 					overallStatus: 'Non-Compliant',
 					badgeBg: '#fef2f2',
@@ -417,7 +425,8 @@ export default {
 			documentStatus: s.documentStatus,
 			reviewedBy: s.reviewedBy,
 			reviewedOn: s.reviewedOn,
-			technicalEvaluationStatus: s.technicalEvaluationStatus
+			technicalEvaluationStatus: s.technicalEvaluationStatus,
+			evaluatorComments: s.evaluatorComments // <-- Added Evaluator Comments here!
 		}));
 	},
 
@@ -438,12 +447,10 @@ export default {
 		const stageIdx = stageOrder.indexOf(stage);
 		const techEvalIdx = stageOrder.indexOf('technical_evaluation');
 
-		// If this group has already advanced past Stage 07 (Technical Evaluation): Lock / disable Next button
 		if (stageIdx > techEvalIdx) {
 			return true;
 		}
 
-		// Evaluation completed: Unlocked and ready to proceed!
 		return false;
 	},
 
@@ -457,7 +464,6 @@ export default {
 			return;
 		}
 
-		// Advance active RFQ group to Stage 08 (Commercial)
 		const grpId = this.getSelectedGroupId();
 		const groupStages = appsmith.store.rfq_group_stages || {};
 		groupStages[grpId] = 'commercial';

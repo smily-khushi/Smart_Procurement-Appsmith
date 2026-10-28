@@ -5,8 +5,8 @@
   "borderColor": "#dbe4ef",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 203,
-  "bottomRowBeforeCollapse": 203,
+  "bottomRow": 214,
+  "bottomRowBeforeCollapse": 238,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -592,8 +592,8 @@
   "mobileTopRow": 26,
   "needsErrorInfo": false,
   "onSubmit": "{{showModal(mdl_RfqTemplateSubmit.name);}}",
-  "originalBottomRow": 203,
-  "originalTopRow": 158,
+  "originalBottomRow": 237,
+  "originalTopRow": 192,
   "parentColumnSpace": 19.125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -1982,8 +1982,8 @@
     "placement": "CENTER"
   },
   "title": "RFQ Data Review",
-  "topRow": 158,
-  "topRowBeforeCollapse": 158,
+  "topRow": 169,
+  "topRowBeforeCollapse": 193,
   "type": "JSON_FORM_WIDGET",
   "useSourceData": false,
   "version": 1,
