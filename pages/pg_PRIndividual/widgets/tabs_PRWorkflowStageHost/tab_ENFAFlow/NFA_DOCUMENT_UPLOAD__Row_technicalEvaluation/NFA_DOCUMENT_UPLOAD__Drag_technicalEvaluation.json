@@ -2,7 +2,7 @@
   "animateLoading": true,
   "backgroundColor": "",
   "borderRadius": "0px",
-  "bottomRow": 5,
+  "bottomRow": 8,
   "dynamicBindingPathList": [
     {
       "key": "text"
@@ -24,7 +24,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "2mg04pwn1v",
-  "leftColumn": 42,
+  "leftColumn": 36,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -33,7 +33,7 @@
   "mobileRightColumn": 51,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "originalBottomRow": 5,
+  "originalBottomRow": 8,
   "originalTopRow": 1,
   "overflow": "NONE",
   "parentColumnSpace": 13.0389404296875,
@@ -41,7 +41,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 51,
+  "rightColumn": 45,
   "shouldTruncate": false,
   "text": "{{ js_NFAController.getDocumentUploadStatus(\"technicalEvaluation\", NFA_DOCUMENT_UPLOAD__fp_TechnicalEvaluation.files) }}",
   "textAlign": "RIGHT",

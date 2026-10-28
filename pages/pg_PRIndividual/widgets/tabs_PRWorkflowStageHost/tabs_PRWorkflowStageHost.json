@@ -5,12 +5,12 @@
   "borderColor": "",
   "borderRadius": "0px",
   "borderWidth": 0,
-  "bottomRow": 132,
+  "bottomRow": 160,
   "boxShadow": "none",
   "children": [
     {
       "borderRadius": "0px",
-      "bottomRow": 980,
+      "bottomRow": 1260,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -51,7 +51,7 @@
     },
     {
       "borderRadius": "0px",
-      "bottomRow": 980,
+      "bottomRow": 1260,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -92,7 +92,7 @@
     },
     {
       "borderRadius": "0px",
-      "bottomRow": 980,
+      "bottomRow": 1260,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -174,7 +174,7 @@
     },
     {
       "animateLoading": true,
-      "bottomRow": 980,
+      "bottomRow": 1260,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -203,7 +203,7 @@
       "widgetName": "Canvas_SendRFP_Tab"
     },
     {
-      "bottomRow": 980,
+      "bottomRow": 1260,
       "canExtend": true,
       "dynamicBindingPathList": [],
       "dynamicTriggerPathList": [],
@@ -219,7 +219,7 @@
       "widgetName": "Canvas_BidMonitoring_Tab"
     },
     {
-      "bottomRow": 1080,
+      "bottomRow": 1260,
       "isLoading": false,
       "isVisible": true,
       "leftColumn": 0,
@@ -235,7 +235,7 @@
       "widgetName": "Canvas_TechEval_Tab"
     },
     {
-      "bottomRow": 1090,
+      "bottomRow": 1260,
       "isVisible": true,
       "leftColumn": 0,
       "parentId": "d1zguipsgn",
@@ -252,7 +252,7 @@
     {
       "backgroundColor": "#F5F7FA",
       "borderRadius": "0px",
-      "bottomRow": 1340,
+      "bottomRow": 1260,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -295,7 +295,7 @@
     {
       "backgroundColor": "#F5F7FA",
       "borderRadius": "0px",
-      "bottomRow": 980,
+      "bottomRow": 1260,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -366,7 +366,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 25,
   "needsErrorInfo": false,
-  "originalBottomRow": 131,
+  "originalBottomRow": 160,
   "originalTopRow": 34,
   "parentColumnSpace": 20.25,
   "parentId": "0",
