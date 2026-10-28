@@ -140,7 +140,7 @@ export default {
 			columns: [
 				{
 					key: "requisition",
-					label: "No",
+					label: "PR No",
 					type: "link",
 					sortable: true,
 					searchable: true

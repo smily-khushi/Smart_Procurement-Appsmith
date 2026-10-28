@@ -23,7 +23,7 @@
   "isVisible": true,
   "leftColumn": 21,
   "needsErrorInfo": false,
-  "onClick": "{{ js_BidMonitoringController.onExtendTimelineClick() }}",
+  "onClick": "{{js_Countdown.extendCountdown();}}",
   "parentId": "fiesxhfger",
   "placement": "START",
   "renderMode": "CANVAS",

@@ -3,7 +3,7 @@
   "borderColor": "",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 15,
+  "bottomRow": 20,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{{ js_NavigationController.getRibbonModel(appsmith.store.selected_vendor_group, appsmith.store.viewing_sourcing_round, appsmith.store.rfq_group_stages, appsmith.store.viewing_stage_id, appsmith.store.demo_native_stage) }}",
   "dynamicBindingPathList": [
@@ -58,7 +58,7 @@
   "onAttachmentClick": "{{navigateTo(cwdg_WorkflowHeaderRibbon.model.selectedAttachmentUrl, {}, 'NEW_WINDOW')}}",
   "onRoundSelect": "{{ js_NavigationController.handleRoundSelect(cwdg_WorkflowHeaderRibbon.model.selectedRoundNumber) }}",
   "onStageSelect": "{{ js_NavigationController.handleStageSelect(cwdg_WorkflowHeaderRibbon.model.selectedStageId) }}",
-  "originalBottomRow": 15,
+  "originalBottomRow": 20,
   "originalTopRow": 0,
   "parentColumnSpace": 20.25,
   "parentId": "2nj5rkitiv",

@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "bottomRow": 6,
+  "bottomRow": 7,
   "boxShadow": "none",
   "dynamicBindingPathList": [],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -11,8 +11,8 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "needsErrorInfo": false,
-  "originalBottomRow": 12,
-  "originalTopRow": 8,
+  "originalBottomRow": 7,
+  "originalTopRow": 2,
   "parentId": "zc1drxoraz",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",

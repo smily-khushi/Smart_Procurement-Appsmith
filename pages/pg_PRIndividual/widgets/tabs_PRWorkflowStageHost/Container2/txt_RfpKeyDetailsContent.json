@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "bottomRow": 68,
-  "bottomRowBeforeCollapse": 51,
+  "bottomRowBeforeCollapse": 68,
   "boxShadow": "none",
   "dynamicBindingPathList": [
     {
@@ -44,7 +44,7 @@
   "textAlign": "LEFT",
   "textType": "TEXT",
   "topRow": 60,
-  "topRowBeforeCollapse": 43,
+  "topRowBeforeCollapse": 60,
   "type": "TEXT_WIDGET",
   "version": 1,
   "widgetId": "y95kf0vc5i",

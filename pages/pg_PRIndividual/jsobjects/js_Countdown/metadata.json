@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "6ad99dcf2bece11a2903b2fb_530a191a-2d6c-4e98-bf6b-1921f3e93c19",
+  "id": "pg_PRIndividual_js_Countdown",
+  "unpublishedCollection": {
+    "name": "js_Countdown",
+    "pageId": "pg_PRIndividual",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "countdownInterval",
+        "value": "null"
+      },
+      {
+        "name": "endTime",
+        "value": "null"
+      }
+    ]
+  }
+}

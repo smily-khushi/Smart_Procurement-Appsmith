@@ -5,7 +5,7 @@
   "borderRadius": "8px",
   "borderWidth": 1,
   "bottomRow": 59,
-  "bottomRowBeforeCollapse": 43,
+  "bottomRowBeforeCollapse": 59,
   "boxShadow": "none",
   "children": [
     {
@@ -61,10 +61,10 @@
   "parentId": "7nmvv62rr0",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 62,
+  "rightColumn": 64,
   "shouldScrollContents": false,
   "topRow": 50,
-  "topRowBeforeCollapse": 34,
+  "topRowBeforeCollapse": 50,
   "type": "CONTAINER_WIDGET",
   "version": 1,
   "widgetId": "roueeybye2",

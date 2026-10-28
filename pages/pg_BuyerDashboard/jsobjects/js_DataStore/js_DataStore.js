@@ -89,8 +89,8 @@ export default {
 	getRawData() {
 		const baseData = [
 			{
-				"PR_ID": "1111",
-				"REQUISITION_NUMBER": "1111",
+				"PR_ID": "6234",
+				"REQUISITION_NUMBER": "6234",
 				"REQUISITION_VALUE": "150000.00",
 				"STATUS_CODE": "PR_CONSISTENCY_CHECK",
 				"STATUS_NAME": "Consistency Check",
@@ -107,8 +107,8 @@ export default {
 				"ARC_COUNT": 0
 			},
 			{
-				"PR_ID": "2222",
-				"REQUISITION_NUMBER": "2222",
+				"PR_ID": "6235",
+				"REQUISITION_NUMBER": "6235",
 				"REQUISITION_VALUE": "45000.00",
 				"STATUS_CODE": "OAARC_CHECK",
 				"STATUS_NAME": "OA/ARC Check",
@@ -125,8 +125,8 @@ export default {
 				"ARC_COUNT": 0
 			},
 			{
-				"PR_ID": "3333",
-				"REQUISITION_NUMBER": "3333",
+				"PR_ID": "6236",
+				"REQUISITION_NUMBER": "6236",
 				"REQUISITION_VALUE": "800000.00",
 				"STATUS_CODE": "PR_CONSISTENCY_APPROVED",
 				"STATUS_NAME": "RFQ Generation",
@@ -143,8 +143,8 @@ export default {
 				"ARC_COUNT": 0
 			},
 			{
-				"PR_ID": "4444",
-				"REQUISITION_NUMBER": "4444",
+				"PR_ID": "6237",
+				"REQUISITION_NUMBER": "6237",
 				"REQUISITION_VALUE": "320000.00",
 				"STATUS_CODE": "MANUAL_ROUTE",
 				"STATUS_NAME": "Manual Route",
@@ -159,6 +159,77 @@ export default {
 				"TOTAL_LINE_ITEMS": 2,
 				"OA_COUNT": 0,
 				"ARC_COUNT": 0
+			},{
+				"PR_ID": "6238",
+				"REQUISITION_NUMBER": "6238",
+				"REQUISITION_VALUE": "120000.00",
+				"STATUS_CODE": "BID_SUBMISSION",
+				"STATUS_NAME": "Bid Submission",
+				"CATEGORY": "IT",
+				"CREATED_DATE": "1720400000000",
+				"CHANGED_ON_DATE": "1720400000000",
+				"PLANT_NAME": "SOUTH REGIONAL FACILITY",
+				"PLANT_CODE": "HYD1",
+				"AGE_DAYS": 4,
+				"PRIORITY": "MEDIUM",
+				"HEADER_NOTE": "Peripherals and Accessories",
+				"TOTAL_LINE_ITEMS": 4,
+				"OA_COUNT": 0,
+				"ARC_COUNT": 0
+			},
+			{
+				"PR_ID": "6239",
+				"REQUISITION_NUMBER": "6239",
+				"REQUISITION_VALUE": "275000.00",
+				"STATUS_CODE": "TECHNICAL_EVALUATION",
+				"STATUS_NAME": "Technical Evaluation",
+				"CATEGORY": "SERVICES",
+				"CREATED_DATE": "1720500000000",
+				"CHANGED_ON_DATE": "1720500000000",
+				"PLANT_NAME": "NORTH REGIONAL FACILITY",
+				"PLANT_CODE": "DEL1",
+				"AGE_DAYS": 6,
+				"PRIORITY": "HIGH",
+				"HEADER_NOTE": "Security System Integration",
+				"TOTAL_LINE_ITEMS": 2,
+				"OA_COUNT": 0,
+				"ARC_COUNT": 0
+			},
+			{
+				"PR_ID": "6240",
+				"REQUISITION_NUMBER": "6240",
+				"REQUISITION_VALUE": "550000.00",
+				"STATUS_CODE": "COMMERCIAL_RFP",
+				"STATUS_NAME": "Commercial Evaluation - RFP 2",
+				"CATEGORY": "IT",
+				"CREATED_DATE": "1720600000000",
+				"CHANGED_ON_DATE": "1720600000000",
+				"PLANT_NAME": "WEST COASTAL FACILITY",
+				"PLANT_CODE": "GOA1",
+				"AGE_DAYS": 8,
+				"PRIORITY": "CRITICAL",
+				"HEADER_NOTE": "Cloud Infrastructure Expansion",
+				"TOTAL_LINE_ITEMS": 6,
+				"OA_COUNT": 1,
+				"ARC_COUNT": 0
+			},
+			{
+				"PR_ID": "6241",
+				"REQUISITION_NUMBER": "6241",
+				"REQUISITION_VALUE": "95000.00",
+				"STATUS_CODE": "PO_RELEASED",
+				"STATUS_NAME": "PO Released",
+				"CATEGORY": "SERVICES",
+				"CREATED_DATE": "1720700000000",
+				"CHANGED_ON_DATE": "1720700000000",
+				"PLANT_NAME": "SOUTH REGIONAL FACILITY",
+				"PLANT_CODE": "HYD1",
+				"AGE_DAYS": 1,
+				"PRIORITY": "LOW",
+				"HEADER_NOTE": "Office Furniture Supply",
+				"TOTAL_LINE_ITEMS": 2,
+				"OA_COUNT": 0,
+				"ARC_COUNT": 1
 			}
 		];
 
