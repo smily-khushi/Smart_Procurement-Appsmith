@@ -600,29 +600,40 @@ export default {
 	},
 
 getHeaderModel() {
-		const step = this.getSimStep();
-		const isClosed = step >= 8 || this.isHistoricalRound();
-		const s = isClosed ? {
-			label: 'Event Closed',
-			bg: '#dcfce7',
-			color: '#15803d',
-			dotColor: '#16a34a'
-		} : {
-			label: 'Bidding in Progress',
-			bg: '#eff6ff',
-			color: '#1d4ed8',
-			dotColor: '#2563eb'
-		};
-		return {
-			phaseBadge: "STAGE 06 - BID MONITORING",
-			title: this.getGroupName(),
+    const step = this.getSimStep();
 
-			status: s,
-			showRefresh: true,
-			showConversationHistory: true,
-			historyButtonLabel: "WhatsApp Notifications" 
-		};
-	},
+    // Check whether the bidding event is closed.
+    const isClosed = step >= 8 || this.isHistoricalRound();
+
+    // Check whether the user has passed the Bid Monitoring stage.
+    const isStagePassed =
+        js_NavigationController.isStagePassed("bid_monitoring");
+
+    // Determine the header status.
+    const s = (isClosed || isStagePassed) ? {
+        label: isStagePassed && !this.isHistoricalRound()
+            ? 'Bidding Completed'
+            : 'Event Closed',
+        bg: '#dcfce7',
+        color: '#15803d',
+        dotColor: '#16a34a'
+    } : {
+        label: 'Bidding in Progress',
+        bg: '#eff6ff',
+        color: '#1d4ed8',
+        dotColor: '#2563eb'
+    };
+
+    return {
+        phaseBadge: "STAGE 06 - BID MONITORING",
+        title: this.getGroupName(),
+        status: s,
+        showRefresh: true,
+        showConversationHistory: true,
+        historyButtonLabel: "WhatsApp Notifications"
+    };
+},
+
 
 	async handleRefresh() {
 		showAlert('Refreshing vendor responses and bid timeline...', 'info');

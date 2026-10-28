@@ -4,7 +4,7 @@
   "borderColor": "#E2E8F0",
   "borderRadius": "8px",
   "borderWidth": "1",
-  "bottomRow": 14,
+  "bottomRow": 16,
   "boxShadow": "0px 1px 3px rgba(0,0,0,0.04)",
   "children": [
     {
@@ -39,7 +39,7 @@
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "7khameyirs",
+      "parentId": "b2w0f24ep4",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -47,8 +47,8 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "0ms3lgs01q",
-      "widgetName": "N0_Hero_Negotiation_Canvas"
+      "widgetId": "jb5gvfkaws",
+      "widgetName": "N0_Hero_Negotiation_CanvasCopy"
     }
   ],
   "containerStyle": "card",
@@ -79,9 +79,9 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "shouldScrollContents": false,
-  "topRow": 0,
+  "topRow": 2,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "7khameyirs",
-  "widgetName": "N0_Hero_Negotiation"
+  "widgetId": "b2w0f24ep4",
+  "widgetName": "N0_Hero_NegotiationCopy"
 }

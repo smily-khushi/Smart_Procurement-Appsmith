@@ -5,7 +5,7 @@
   "borderColor": "#E2E8F0",
   "borderRadius": "8px",
   "borderWidth": "1",
-  "bottomRow": 34,
+  "bottomRow": 38,
   "boxShadow": "none",
   "cachedTableData": [
     {
@@ -275,7 +275,7 @@
     }
   ],
   "textSize": "0.75rem",
-  "topRow": 6,
+  "topRow": 7,
   "totalRecordsCount": 5,
   "type": "TABLE_WIDGET_V2",
   "version": 2,

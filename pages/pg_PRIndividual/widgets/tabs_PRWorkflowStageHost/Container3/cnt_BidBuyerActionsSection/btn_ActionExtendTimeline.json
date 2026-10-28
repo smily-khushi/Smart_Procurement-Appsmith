@@ -6,10 +6,17 @@
   "buttonColor": "#0f172a",
   "buttonVariant": "SECONDARY",
   "disabledWhenInvalid": false,
-  "dynamicBindingPathList": [],
+  "dynamicBindingPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
   "dynamicPropertyPathList": [
     {
       "key": "onClick"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -18,7 +25,7 @@
     }
   ],
   "isDefaultClickDisabled": true,
-  "isDisabled": false,
+  "isDisabled": "\n{{js_NavigationController.isStagePassed(\"bid_monitoring\") }}\n",
   "isLoading": false,
   "isVisible": true,
   "leftColumn": 21,

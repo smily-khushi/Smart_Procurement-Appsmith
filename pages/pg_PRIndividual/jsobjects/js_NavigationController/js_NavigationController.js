@@ -510,5 +510,26 @@ export default {
 		const storeActiveRounds = appsmith.store.rfq_group_active_rounds || {};
 		const activeRound = storeActiveRounds[activeGroupId] || appsmith.store.active_sourcing_round || 1;
 		await storeValue('viewing_sourcing_round', activeRound);
-	}
+	},
+	
+	
+	isStagePassed(stageId) {
+			const targetIndex = this.STAGES.findIndex(
+					stage => stage.id === stageId
+			);
+
+			const nativeStageId = this.getNativeStageId();
+
+			const currentIndex = this.STAGES.findIndex(
+					stage => stage.id === nativeStageId
+			);
+
+			// If either stage is unknown, do not assume it has passed.
+			if (targetIndex === -1 || currentIndex === -1) {
+					return false;
+			}
+
+			// True only when the workflow has advanced beyond this stage.
+			return currentIndex > targetIndex;
+	},
 };
