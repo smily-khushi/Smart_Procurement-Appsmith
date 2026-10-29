@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderColor": "#CBD5E1",
   "borderRadius": "6px",
-  "bottomRow": 167.00000000090063,
+  "bottomRow": 167.0000000009066,
   "boxShadow": "none",
   "defaultText": "{{ appsmith.store.nfaDraft?.review?.BankGuarantee1 ?? \"NA\" }}",
   "dynamicBindingPathList": [
@@ -49,7 +49,7 @@
   "rightColumn": 46,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 161.0000000008715,
+  "topRow": 161.0000000008803,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "8vjskguje5",

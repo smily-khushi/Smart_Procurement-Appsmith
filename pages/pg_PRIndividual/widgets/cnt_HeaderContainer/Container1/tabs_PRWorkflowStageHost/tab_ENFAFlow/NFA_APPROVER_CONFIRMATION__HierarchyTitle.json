@@ -43,7 +43,7 @@
   "text": "{{ 'Approval Hierarchy  •  ' + (appsmith.store.nfaDraft?.approvers?.length || 1) + ' level(s)' }}",
   "textAlign": "LEFT",
   "textColor": "#132238",
-  "topRow": 46.99999999959943,
+  "topRow": 46.999999999580496,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

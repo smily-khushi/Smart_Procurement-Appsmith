@@ -2,7 +2,7 @@
   "animateLoading": true,
   "backgroundColor": "",
   "borderRadius": "0px",
-  "bottomRow": 143.0000000008788,
+  "bottomRow": 143.00000000088477,
   "dynamicBindingPathList": [],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
@@ -39,7 +39,7 @@
   "text": "13–24  Miscellaneous Clauses & Annexures",
   "textAlign": "LEFT",
   "textColor": "#132238",
-  "topRow": 139.00000000087235,
+  "topRow": 139.00000000088116,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

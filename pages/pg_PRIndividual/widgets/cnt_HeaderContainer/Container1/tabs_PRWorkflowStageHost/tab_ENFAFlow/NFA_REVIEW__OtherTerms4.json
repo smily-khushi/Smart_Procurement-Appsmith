@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderColor": "#CBD5E1",
   "borderRadius": "6px",
-  "bottomRow": 233.0000000008631,
+  "bottomRow": 233.0000000008728,
   "boxShadow": "none",
   "defaultText": "{{ appsmith.store.nfaDraft?.review?.OtherTerms4 ?? \"NA\" }}",
   "dynamicBindingPathList": [
@@ -49,7 +49,7 @@
   "rightColumn": 61,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 228.00000000087326,
+  "topRow": 228.0000000008872,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "btdibojq1c",

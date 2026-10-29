@@ -4,7 +4,7 @@
   "borderColor": "#D9E2F0",
   "borderRadius": "8px",
   "borderWidth": "1",
-  "bottomRow": 106.00000000090864,
+  "bottomRow": 106.0000000009116,
   "boxShadow": "none",
   "children": [
     {
@@ -74,7 +74,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "shouldScrollContents": false,
-  "topRow": 99.00000000090864,
+  "topRow": 99.0000000009116,
   "type": "CONTAINER_WIDGET",
   "version": 1,
   "widgetId": "vi8iuiuxqc",

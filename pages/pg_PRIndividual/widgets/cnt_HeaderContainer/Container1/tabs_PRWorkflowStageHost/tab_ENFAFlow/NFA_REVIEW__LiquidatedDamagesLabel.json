@@ -2,7 +2,7 @@
   "animateLoading": true,
   "backgroundColor": "",
   "borderRadius": "0px",
-  "bottomRow": 190.0000000009592,
+  "bottomRow": 190.0000000009766,
   "dynamicBindingPathList": [],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
@@ -39,7 +39,7 @@
   "text": "18. Liquidated Damages for delay:",
   "textAlign": "LEFT",
   "textColor": "#374151",
-  "topRow": 186.00000000095704,
+  "topRow": 186.00000000096674,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

@@ -2,7 +2,7 @@
   "animateLoading": true,
   "backgroundColor": "",
   "borderRadius": "0px",
-  "bottomRow": 147.00000000088608,
+  "bottomRow": 147.00000000089204,
   "dynamicBindingPathList": [],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
@@ -39,7 +39,7 @@
   "text": "Delivery, Payment Terms, Bank Guarantees, Liquidated Damages, etc.",
   "textAlign": "LEFT",
   "textColor": "#64748B",
-  "topRow": 143.00000000088272,
+  "topRow": 143.00000000089153,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

@@ -2,7 +2,7 @@
   "animateLoading": true,
   "backgroundColor": "",
   "borderRadius": "0px",
-  "bottomRow": 112.00000000093775,
+  "bottomRow": 112.0000000009407,
   "dynamicBindingPathList": [],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
@@ -39,7 +39,7 @@
   "text": "▣ Techno-Commercial Comparative",
   "textAlign": "LEFT",
   "textColor": "#132238",
-  "topRow": 108.00000000092344,
+  "topRow": 108.0000000009294,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

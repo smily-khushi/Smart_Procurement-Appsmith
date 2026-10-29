@@ -2,7 +2,7 @@
   "animateLoading": true,
   "backgroundColor": "",
   "borderRadius": "0px",
-  "bottomRow": 177.0000000008573,
+  "bottomRow": 177.0000000008652,
   "dynamicBindingPathList": [],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
@@ -39,7 +39,7 @@
   "text": "16. Price Escalation / Variation clause:",
   "textAlign": "LEFT",
   "textColor": "#374151",
-  "topRow": 173.00000000088204,
+  "topRow": 173.00000000089943,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

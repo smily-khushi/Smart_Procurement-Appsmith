@@ -46,7 +46,7 @@
   "text": "{{ appsmith.store.nfaDraft?.submissionStatus === 'FAILED' ? 'Not Started' : 'Awaiting Approval' }}",
   "textAlign": "RIGHT",
   "textColor": "#0B5ED7",
-  "topRow": 34.999999997674266,
+  "topRow": 34.99999999766919,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

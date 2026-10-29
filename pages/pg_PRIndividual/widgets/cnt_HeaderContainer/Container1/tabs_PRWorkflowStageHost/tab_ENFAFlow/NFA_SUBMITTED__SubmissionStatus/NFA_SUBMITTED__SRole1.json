@@ -46,7 +46,7 @@
   "text": "{{ appsmith.store.nfaDraft?.approvers?.[1] ? '▱  ' + appsmith.store.nfaDraft.approvers[1].name + ' (Level ' + appsmith.store.nfaDraft.approvers[1].level + ')' : '' }}",
   "textAlign": "LEFT",
   "textColor": "#8A96A8",
-  "topRow": 39.79999999764523,
+  "topRow": 39.79999999764016,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

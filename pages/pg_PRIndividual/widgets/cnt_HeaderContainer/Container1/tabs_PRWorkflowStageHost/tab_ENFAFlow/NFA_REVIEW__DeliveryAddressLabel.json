@@ -2,7 +2,7 @@
   "animateLoading": true,
   "backgroundColor": "",
   "borderRadius": "0px",
-  "bottomRow": 176.00000000083514,
+  "bottomRow": 176.0000000008411,
   "dynamicBindingPathList": [],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
@@ -39,7 +39,7 @@
   "text": "17. Delivery Location & Address:",
   "textAlign": "LEFT",
   "textColor": "#374151",
-  "topRow": 172.00000000084097,
+  "topRow": 172.00000000084978,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

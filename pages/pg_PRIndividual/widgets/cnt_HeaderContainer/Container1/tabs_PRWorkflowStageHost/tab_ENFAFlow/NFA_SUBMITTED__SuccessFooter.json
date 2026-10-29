@@ -39,7 +39,7 @@
   "text": "ProcureDirect © 2024 ProcureDirect Enterprise. All rights reserved.                                                                            Privacy Policy      Terms of Service      Support",
   "textAlign": "CENTER",
   "textColor": "#64748B",
-  "topRow": 112.99999999668748,
+  "topRow": 112.99999999668022,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

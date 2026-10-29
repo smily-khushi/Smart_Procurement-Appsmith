@@ -4,7 +4,7 @@
   "borderColor": "#C8D4E4",
   "borderRadius": "8px",
   "borderWidth": "1",
-  "bottomRow": 94.99999999954045,
+  "bottomRow": 94.99999999953633,
   "boxShadow": "none",
   "children": [
     {
@@ -76,7 +76,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "shouldScrollContents": true,
-  "topRow": 81.99999999954045,
+  "topRow": 81.99999999953633,
   "type": "CONTAINER_WIDGET",
   "version": 1,
   "widgetId": "zslmbk1tgv",

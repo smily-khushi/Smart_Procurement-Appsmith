@@ -2,7 +2,7 @@
   "animateLoading": true,
   "backgroundColor": "",
   "borderRadius": "0px",
-  "bottomRow": 189.00000000080848,
+  "bottomRow": 189.0000000008173,
   "dynamicBindingPathList": [],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
@@ -39,7 +39,7 @@
   "text": "19. Guarantee / Warranty / DLP Terms:",
   "textAlign": "LEFT",
   "textColor": "#374151",
-  "topRow": 185.00000000081116,
+  "topRow": 185.00000000081968,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

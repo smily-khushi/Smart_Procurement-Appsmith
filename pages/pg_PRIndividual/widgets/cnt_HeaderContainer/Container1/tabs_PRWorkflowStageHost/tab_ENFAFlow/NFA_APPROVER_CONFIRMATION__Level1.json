@@ -43,7 +43,7 @@
   "text": "{{ js_NFAController.getApprover(0)?.level || 1 }}",
   "textAlign": "CENTER",
   "textColor": "#FFFFFF",
-  "topRow": 52.99999999959943,
+  "topRow": 52.999999999580496,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

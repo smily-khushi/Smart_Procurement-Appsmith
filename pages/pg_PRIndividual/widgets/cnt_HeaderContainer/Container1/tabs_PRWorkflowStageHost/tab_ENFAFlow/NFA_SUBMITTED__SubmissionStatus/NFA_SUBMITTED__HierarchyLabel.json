@@ -39,7 +39,7 @@
   "text": "APPROVAL HIERARCHY",
   "textAlign": "LEFT",
   "textColor": "#94A3B8",
-  "topRow": 28.99999999765704,
+  "topRow": 28.99999999765194,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
