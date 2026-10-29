@@ -3,7 +3,7 @@
   "borderColor": "",
   "borderRadius": "0px",
   "borderWidth": "1",
-  "bottomRow": 67,
+  "bottomRow": 114,
   "boxShadow": "none",
   "defaultModel": "{{ js_PR_Consistency_Parser.getCleanConsistencyData() }}\n",
   "dynamicBindingPathList": [

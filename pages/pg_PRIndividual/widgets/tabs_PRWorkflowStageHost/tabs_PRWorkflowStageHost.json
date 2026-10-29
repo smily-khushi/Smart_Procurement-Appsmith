@@ -5,12 +5,12 @@
   "borderColor": "",
   "borderRadius": "0px",
   "borderWidth": 0,
-  "bottomRow": 122,
+  "bottomRow": 136,
   "boxShadow": "none",
   "children": [
     {
       "borderRadius": "0px",
-      "bottomRow": 880,
+      "bottomRow": 960,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -51,7 +51,7 @@
     },
     {
       "borderRadius": "0px",
-      "bottomRow": 880,
+      "bottomRow": 1330,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -92,7 +92,7 @@
     },
     {
       "borderRadius": "0px",
-      "bottomRow": 910,
+      "bottomRow": 960,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -174,7 +174,7 @@
     },
     {
       "animateLoading": true,
-      "bottomRow": 880,
+      "bottomRow": 960,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -219,7 +219,7 @@
       "widgetName": "Canvas_BidMonitoring_Tab"
     },
     {
-      "bottomRow": 1090,
+      "bottomRow": 1100,
       "isLoading": false,
       "isVisible": true,
       "leftColumn": 0,
@@ -295,7 +295,7 @@
     {
       "backgroundColor": "#F5F7FA",
       "borderRadius": "0px",
-      "bottomRow": 1840,
+      "bottomRow": 960,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -357,7 +357,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "c7654e8cc8",
-  "leftColumn": 1,
+  "leftColumn": 2,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 10,
   "minWidth": 450,
@@ -367,8 +367,8 @@
   "mobileTopRow": 25,
   "needsErrorInfo": false,
   "onTabSelected": "{{}}",
-  "originalBottomRow": 122,
-  "originalTopRow": 34,
+  "originalBottomRow": 136,
+  "originalTopRow": 36,
   "parentColumnSpace": 20.25,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -376,7 +376,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "shouldScrollContents": true,
-  "shouldShowTabs": false,
+  "shouldShowTabs": true,
   "tabsObj": {
     "bid_monitoring": {
       "id": "bid_monitoring",
@@ -459,7 +459,7 @@
       "widgetId": "w0po9s5sdj"
     }
   },
-  "topRow": 34,
+  "topRow": 36,
   "type": "TABS_WIDGET",
   "version": 3,
   "widgetId": "d1zguipsgn",

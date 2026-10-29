@@ -3,7 +3,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "0px",
   "borderWidth": "1",
-  "bottomRow": 29,
+  "bottomRow": 30,
   "boxShadow": "none",
   "defaultModel": "{{\n  {\n    selectedSupplierName: js_TechnicalEvaluationController.getSelectedSupplierName(),\n    title: \"Document Compliance — \" + js_TechnicalEvaluationController.getSelectedSupplierName(),\n    subtitle: \"Specification and quality criteria review\",\n    complianceBadge: js_TechnicalEvaluationController.getSelectedSupplierComplianceBadge(),\n    rows: js_TechnicalEvaluationController.getComplianceTableData()\n  }\n}}",
   "dynamicBindingPathList": [
@@ -37,7 +37,7 @@
   "mobileTopRow": 28,
   "needsErrorInfo": false,
   "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
-  "originalBottomRow": 54,
+  "originalBottomRow": 29,
   "originalTopRow": 0,
   "parentColumnSpace": 18.84228515625,
   "parentId": "rxz5txxo08",

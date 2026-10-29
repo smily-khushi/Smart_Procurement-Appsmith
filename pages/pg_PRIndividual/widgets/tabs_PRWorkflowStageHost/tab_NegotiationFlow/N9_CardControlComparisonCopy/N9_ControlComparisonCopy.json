@@ -1,10 +1,10 @@
 {
   "allowedFileTypes": "{{ [\".pdf\", \".xls\", \".xlsx\", \".docx\", \".msg\", \".eml\"] }}",
   "animateLoading": true,
-  "borderRadius": "8px",
+  "borderRadius": "1.5rem",
   "bottomRow": 20,
   "boxShadow": "none",
-  "buttonColor": "#FFFFFF",
+  "buttonColor": "#3b82f6",
   "dynamicBindingPathList": [
     {
       "key": "allowedFileTypes"

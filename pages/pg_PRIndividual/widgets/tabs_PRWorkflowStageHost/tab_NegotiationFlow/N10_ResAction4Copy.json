@@ -37,7 +37,7 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 18,
+  "rightColumn": 19,
   "text": "Initiate RFP\nRevision",
   "topRow": 81,
   "type": "BUTTON_WIDGET",

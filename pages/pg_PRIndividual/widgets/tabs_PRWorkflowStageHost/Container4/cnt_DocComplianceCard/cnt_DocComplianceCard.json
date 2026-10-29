@@ -3,11 +3,11 @@
   "borderColor": "#e2e8f0",
   "borderRadius": "0.5rem",
   "borderWidth": "1",
-  "bottomRow": 102,
+  "bottomRow": 103,
   "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.05)",
   "children": [
     {
-      "bottomRow": 310,
+      "bottomRow": 320,
       "isLoading": false,
       "isVisible": true,
       "leftColumn": 0,
@@ -29,7 +29,7 @@
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 102,
+  "originalBottomRow": 103,
   "originalTopRow": 71,
   "parentId": "xze5cpmeo4",
   "renderMode": "CANVAS",

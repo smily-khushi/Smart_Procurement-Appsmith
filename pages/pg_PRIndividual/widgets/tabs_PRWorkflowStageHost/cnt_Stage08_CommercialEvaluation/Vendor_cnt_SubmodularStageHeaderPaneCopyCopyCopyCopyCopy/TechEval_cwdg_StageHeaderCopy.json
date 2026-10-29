@@ -28,7 +28,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onConversationHistory": "{{showModal(mdl_ConversationalHistory.name)}}",
-  "originalBottomRow": 12,
+  "originalBottomRow": 13,
   "originalTopRow": 0,
   "parentId": "hhcz80flzt",
   "renderMode": "CANVAS",

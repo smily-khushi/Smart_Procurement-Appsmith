@@ -5,13 +5,13 @@
   "borderColor": "",
   "borderRadius": "0px",
   "borderWidth": 0,
-  "bottomRow": 184,
+  "bottomRow": 94,
   "boxShadow": "none",
   "children": [
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 880,
+      "bottomRow": 900,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -54,7 +54,7 @@
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 880,
+      "bottomRow": 900,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -97,7 +97,7 @@
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 890,
+      "bottomRow": 900,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -183,7 +183,7 @@
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 1040,
+      "bottomRow": 1020,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -269,7 +269,7 @@
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 880,
+      "bottomRow": 900,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -441,7 +441,7 @@
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 880,
+      "bottomRow": 900,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -506,7 +506,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "c1dd5d7bab",
-  "leftColumn": 1,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 10,
   "minWidth": 450,
@@ -515,16 +515,16 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 184,
-  "originalTopRow": 96,
+  "originalBottomRow": 94,
+  "originalTopRow": 0,
   "parentColumnSpace": 19.5,
   "parentId": "9p4oaqqoef",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 63,
   "shouldScrollContents": true,
-  "shouldShowTabs": false,
+  "shouldShowTabs": true,
   "tabsObj": {
     "analysis_in_progress": {
       "id": "analysis_in_progress",
@@ -615,7 +615,7 @@
       "widgetId": "xsbm74tskm"
     }
   },
-  "topRow": 96,
+  "topRow": 0,
   "type": "TABS_WIDGET",
   "version": 3,
   "widgetId": "rwcih98gpx",

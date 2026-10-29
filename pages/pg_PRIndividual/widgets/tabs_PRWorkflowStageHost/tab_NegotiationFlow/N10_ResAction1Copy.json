@@ -37,7 +37,7 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 18,
+  "rightColumn": 19,
   "text": "Run Negotiation\nAnalytics",
   "topRow": 73,
   "type": "BUTTON_WIDGET",
