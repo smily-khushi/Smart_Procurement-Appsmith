@@ -5,7 +5,7 @@
   "borderColor": "",
   "borderRadius": "0px",
   "borderWidth": 0,
-  "bottomRow": 94,
+  "bottomRow": 90,
   "boxShadow": "none",
   "children": [
     {
@@ -524,7 +524,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "shouldScrollContents": true,
-  "shouldShowTabs": true,
+  "shouldShowTabs": false,
   "tabsObj": {
     "analysis_in_progress": {
       "id": "analysis_in_progress",

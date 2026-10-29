@@ -5,12 +5,12 @@
   "borderColor": "",
   "borderRadius": "0px",
   "borderWidth": 0,
-  "bottomRow": 136,
+  "bottomRow": 128,
   "boxShadow": "none",
   "children": [
     {
       "borderRadius": "0px",
-      "bottomRow": 960,
+      "bottomRow": 920,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -92,7 +92,7 @@
     },
     {
       "borderRadius": "0px",
-      "bottomRow": 960,
+      "bottomRow": 920,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -174,7 +174,7 @@
     },
     {
       "animateLoading": true,
-      "bottomRow": 960,
+      "bottomRow": 920,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -295,7 +295,7 @@
     {
       "backgroundColor": "#F5F7FA",
       "borderRadius": "0px",
-      "bottomRow": 960,
+      "bottomRow": 920,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -376,7 +376,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "shouldScrollContents": true,
-  "shouldShowTabs": true,
+  "shouldShowTabs": false,
   "tabsObj": {
     "bid_monitoring": {
       "id": "bid_monitoring",
