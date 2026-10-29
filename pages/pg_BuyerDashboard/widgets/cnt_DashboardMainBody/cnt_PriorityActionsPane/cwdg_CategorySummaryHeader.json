@@ -53,7 +53,7 @@
   "mobileTopRow": 2,
   "needsErrorInfo": false,
   "onExport": "{{ download(cwdg_CategorySummaryHeader.model.csvData, \"Buyer_Dashboard_Export.csv\", \"text/csv\") }}",
-  "onReqNavigate": "{{ storeValue('selected_pr', cwdg_CategorySummaryHeader.model.selectedRequisition).then(() => storeValue('viewing_stage_id', null)).then(() => storeValue('demo_native_stage', null)).then(() => storeValue('active_pr_id', null)).then(() => storeValue('is_manual_route', false)).then(() => storeValue('manual_route_pr_id', null)).then(() => navigateTo('pg_PRIndividual')); }}",
+  "onReqNavigate": "{{\n  storeValue(\n    'selected_pr',\n    cwdg_CategorySummaryHeader.model.selectedRequisition\n  )\n  .then(() => storeValue('viewing_stage_id', null))\n  .then(() => storeValue('demo_native_stage', null))\n  .then(() => storeValue('active_pr_id', null))\n  .then(() => storeValue('selected_vendor_group', null))\n  .then(() => storeValue('rfq_group_stages', {}))\n  .then(() => storeValue('rfq_group_active_rounds', {}))\n  .then(() => storeValue('active_sourcing_round', 1))\n  .then(() => storeValue('viewing_sourcing_round', 1))\n  .then(() => storeValue('is_manual_route', false))\n  .then(() => storeValue('manual_route_pr_id', null))\n  .then(() => navigateTo('pg_PRIndividual'));\n}}",
   "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
   "parentColumnSpace": 23.21875,
   "parentId": "6vln7qve9d",

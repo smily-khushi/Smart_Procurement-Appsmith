@@ -114,7 +114,8 @@ export default {
 	},
 
 	getDisplayNfaId() {
-		return appsmith.store.nfaDraft?.nfaId || appsmith.store.nfaDraft?.nfaNo || 'Pending';
+		const draft=this.getCurrentDraft() || {};
+		return draft.nfaId || draft.nfaNo || 'Pending';
 	},
 
 	getResumePage(draft = appsmith.store.nfaDraft || {}) {
@@ -650,8 +651,6 @@ export default {
 				DeliveryClauseNA2:NFA_REVIEW__DeliveryClauseNA2.text,
 				PaymentTerms:NFA_REVIEW__PaymentTermsValue.text,
 				BankGuarantee1:NFA_REVIEW__BankGuarantee1.text,
-				BankGuarantee2:NFA_REVIEW__BankGuarantee2.text,
-				BankGuarantee3:NFA_REVIEW__BankGuarantee3.text,
 				BankGuarantee4:NFA_REVIEW__BankGuarantee4.text,
 				PriceEscalation:NFA_REVIEW__PriceEscalationValue.text,
 				DeliveryAddress:NFA_REVIEW__DeliveryAddressValue.text,
@@ -681,13 +680,21 @@ export default {
 		}
 	},
 
+	getMockAribaLevelCount() {
+		const raw = Number(appsmith.store.nfa_mock_ariba_level_count ?? 2);
+		return Number.isInteger(raw) && raw >= 1 && raw <= 4 ? raw : 2;
+	},
+
 	_normaliseApprovers(list) {
 		return (Array.isArray(list) ? list : [])
 			.filter(a => a && String(a.name || '').trim())
 			.map((a, i) => ({ ...a, name: String(a.name).trim(), level: i + 1 }));
 	},
 
-
+	_approversHaveDuplicates(list) {
+		const names = (list || []).map(a => String(a.name || '').trim().toLocaleLowerCase());
+		return names.length !== new Set(names).size;
+	},
 	getApprover(index) { return (this.getCurrentDraft()?.approvers || appsmith.store.nfaDraft?.approvers || [])[index] || null; },
 
 	getApproverSummary() {
@@ -811,19 +818,121 @@ export default {
 			return true;
 		} catch(e) { showAlert('Mock NFA submission could not be completed. Please try again.', 'error'); return false; }
 	},
-	
-	
-	
+
+	/** The last page is read-only for business data. These controls simulate external statuses only. */
+	getMockSubmittedModel() {
+		const draft = this.getCurrentDraft() || {};
+		const list = this._normaliseApprovers(draft.approvers || []);
+		const submitted = String(draft.submissionStatus || 'NOT_SUBMITTED').toUpperCase();
+		const completeCount = Math.min(list.length, Math.max(0, Number(draft.approvalStatus?.completed || 0)));
+		const pendingCount = Math.max(0, list.length - completeCount);
+		const po = draft.poStatus || 'Not Created';
+		const failure = submitted === 'FAILED';
+		const processing = submitted === 'PROCESSING';
+		const released = po === 'Released';
+		const created = po === 'Created' || released;
+		const approved = completeCount === list.length && list.length > 0 && !failure && !processing;
+		const rows = list.map((a,i) => ({
+			title: (i < completeCount ? '✓  ' : i === completeCount && !failure ? '▣  ' : '▱  ') + a.name + ' (Level ' + (i+1) + ')',
+			state: i < completeCount ? 'Approved (Mock)' : i === completeCount && !failure && !processing ? 'Awaiting Approval' : 'Pending',
+			active: i === completeCount && !approved && !failure && !processing,
+			completed: i < completeCount
+		}));
+		let badge = 'Pending Approval';
+		if (failure) badge = 'Submission Failed';
+		else if (processing) badge = 'Processing';
+		else if (released) badge = 'PO Released';
+		else if (created) badge = 'PO Created';
+		else if (approved) badge = 'Approved';
+		const color = failure ? '#B91C1C' : approved ? '#047857' : '#B45309';
+		const background = failure ? '#FEF2F2' : approved ? '#ECFDF5' : '#FFF7E6';
+		let title = failure ? 'Mock NFA Submission Failed' : processing ? 'Mock NFA Submission in Progress' : 'Mock NFA Submitted Successfully';
+		if (released) title = 'Mock PO Released';
+		else if (created) title = 'Mock PO Created';
+		else if (approved) title = 'Mock NFA Approved';
+		const nfaId = draft.nfaId || draft.nfaNo || 'Pending';
+		const subtitle = failure ? 'A simulated technical submission error occurred. Retry is available below.' :
+		processing ? 'Simulated submission is being processed.' :
+		'Reference ' + nfaId + ' • This is a demonstration only; no real NFA was submitted to Ariba.';
+		return {
+			title, subtitle, nfaId, badge, badgeColor: color, badgeBackground: background,
+			approvalRows: rows, completedApprovals: completeCount, pendingApprovals: pendingCount,
+			currentApprover: failure || approved || processing ? '' : (list[completeCount]?.name || ''),
+			poCreatedText: created ? '✓   PO Created\n      Status: ' + (released ? 'Completed' : 'Created (Mock)') : '▱   PO Created\n      Status: Not Created',
+			poReleasedText: released ? '✓   PO Released\n      Status: Released (Mock)' : '○   PO Released\n      Status: Pending',
+			failure, processing, approved, created, released,
+			canRetry: failure && draft.mockFailureType === 'TECHNICAL',
+			canSimulateFailure: submitted === 'PENDING_APPROVAL' && completeCount === 0,
+			canAdvance: !failure && !processing && ['PENDING_APPROVAL', 'APPROVED', 'PO_CREATED'].includes(submitted),
+			advanceLabel: submitted === 'PENDING_APPROVAL' ? 'Demo: Approve Next' : submitted === 'APPROVED' ? 'Demo: Create PO' : submitted === 'PO_CREATED' ? 'Demo: Release PO' : 'Demo: Complete',
+			lastUpdated: draft.mockLastUpdated || ''
+		};
+	},
+
+	async simulateMockTechnicalFailure() {
+		try {
+			const draft = await this.prepare(false);
+			const model=this.getMockSubmittedModel();
+			if (!draft.mockSubmission || !model.canSimulateFailure) {
+				showAlert('Mock technical failure can only be simulated before approvals begin.', 'warning');
+				return false;
+			}
+			await this._persistDraft({ ...draft, submissionStatus: 'FAILED', mockFailureType: 'TECHNICAL', mockLastUpdated: new Date().toISOString() });
+			showAlert('Simulated technical submission failure. No live workflow was affected.', 'warning');
+			return true;
+		} catch(e) { showAlert('Could not simulate the mock failure.', 'error'); return false; }
+	},
+
+	async advanceMockSubmission() {
+		try {
+			const draft = await this.prepare(false);
+			if (!draft.mockSubmission) { showAlert('This control is available for mock NFAs only.', 'warning'); return false; }
+			const status=String(draft.submissionStatus || '').toUpperCase();
+			const approvers=this._normaliseApprovers(draft.approvers || []);
+			if (status === 'FAILED' || status === 'PROCESSING') { showAlert('Resolve submission status before continuing.', 'warning'); return false; }
+			let updated;
+			let message;
+			if (status === 'PENDING_APPROVAL') {
+				const completed=Math.max(0,Math.min(approvers.length,Number(draft.approvalStatus?.completed || 0)));
+				if (completed >= approvers.length) return false;
+				const next=completed+1;
+				updated={...draft, approvalStatus:{currentApprover:approvers[next]?.name || '',completed:next,pending:approvers.length-next},submissionStatus:next===approvers.length?'APPROVED':'PENDING_APPROVAL'};
+				message=next===approvers.length?'All mock approvals complete.':'Mock approval level '+next+' completed.';
+			} else if (status === 'APPROVED') {
+				updated={...draft,submissionStatus:'PO_CREATED',poStatus:'Created'};
+				message='Mock PO created.';
+			} else if (status === 'PO_CREATED') {
+				updated={...draft,submissionStatus:'PO_RELEASED',poStatus:'Released'};
+				message='Mock PO released.';
+			} else { showAlert('No further mock status changes are available.', 'info'); return false; }
+			await this._persistDraft({...updated,mockLastUpdated:new Date().toISOString()});
+			showAlert(message+' No external system was contacted.', 'success');
+			return true;
+		} catch (e) { showAlert('Could not update mock submission status.', 'error'); return false; }
+	},
+
+
+
 
 	async retrySubmission() {
-		const draft=await this.prepare(false);
-		if (draft.submissionStatus === 'PROCESSING') { showAlert('Your NFA is being submitted. Please wait for the process to complete.','warning'); return false; }
-		if (draft.submissionStatus !== 'FAILED') return false;
 		try {
-			const list=this._normaliseApprovers(draft.approvers);
-			await storeValue('nfaDraft',{...draft,submissionStatus:'PENDING_APPROVAL',approvalStatus:{currentApprover:list[0]?.name || '',completed:0,pending:list.length}},true);
-			showAlert('NFA submitted successfully.','success'); return true;
-		} catch(e){ showAlert('Something went wrong while processing your request. Please try again or contact support.','error'); return false; }
+			const draft=await this.prepare(false);
+			if (draft.submissionStatus === 'PROCESSING') {
+				showAlert('Your mock NFA is being submitted. Please wait for the process to complete.','warning');
+				return false;
+			}
+			if (draft.submissionStatus !== 'FAILED' || draft.mockFailureType !== 'TECHNICAL' || !draft.mockSubmission) {
+				showAlert('Retry is available only for a simulated technical submission failure.', 'warning');
+				return false;
+			}
+			const approvers=this._normaliseApprovers(draft.approvers || []);
+			await this._persistDraft({
+				...draft,submissionStatus:'PENDING_APPROVAL',mockFailureType:null,mockLastUpdated:new Date().toISOString(),
+				approvalStatus:{currentApprover:approvers[0]?.name || '',completed:0,pending:approvers.length},poStatus:'Not Created'
+			});
+			showAlert('Mock NFA submission retry successful. No Ariba workflow was contacted.','success');
+			return true;
+		} catch(e) { showAlert('The simulated retry could not be completed.','error'); return false; }
 	},
 
 	async goDashboard() { return navigateTo('pg_BuyerDashboard'); }

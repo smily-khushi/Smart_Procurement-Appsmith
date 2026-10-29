@@ -434,14 +434,6 @@ export default {
 					TileCount: counts.poPosted,
 					FilterValue: "PO_POSTED",
 					SortOrder: 9
-				},
-
-				{
-					...defaultTile,
-					TileName: "Manual Route",
-					TileCount: counts.manualRoute,
-					FilterValue: "MANUAL_ROUTE",
-					SortOrder: 10
 				}
 			]
 		};

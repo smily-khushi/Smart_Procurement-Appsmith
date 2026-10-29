@@ -3,7 +3,7 @@
   "borderColor": "",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "",
-  "bottomRow": 8,
+  "bottomRow": 6,
   "boxShadow": "none",
   "defaultModel": "{\n  \"checked\": true,\n  \"size\": {\n  },\n  \"activeLabel\": \"Active PRs\",\n  \"inactiveLabel\": \"All PRs\"\n}",
   "dynamicBindingPathList": [
