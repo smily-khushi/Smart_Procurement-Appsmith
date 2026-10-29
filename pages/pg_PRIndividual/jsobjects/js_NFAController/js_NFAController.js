@@ -60,30 +60,42 @@ export default {
 	},
 
 	_getSelectedVendors() {
-		if (typeof NFA_VENDOR_SELECTION__CheckboxGroup1 !== 'undefined' && Array.isArray(NFA_VENDOR_SELECTION__CheckboxGroup1.selectedValues) && NFA_VENDOR_SELECTION__CheckboxGroup1.selectedValues.length > 0) {
+		// A deliberately empty checkbox selection must never be replaced by a demo vendor.
+		if (typeof NFA_VENDOR_SELECTION__CheckboxGroup1 !== 'undefined' &&
+				Array.isArray(NFA_VENDOR_SELECTION__CheckboxGroup1.selectedValues)) {
 			return NFA_VENDOR_SELECTION__CheckboxGroup1.selectedValues;
 		}
 		const draft = this.getCurrentDraft() || appsmith.store.nfaDraft;
-		if (draft?.vendorSelection?.selectedVendors && draft.vendorSelection.selectedVendors.length > 0) {
+		if (Array.isArray(draft?.vendorSelection?.selectedVendors)) {
 			return draft.vendorSelection.selectedVendors;
 		}
-		if (draft?.vendorSelection?.selectedVendor) {
-			return [draft.vendorSelection.selectedVendor];
-		}
-		return ['ARCHICLAD FACADES LLP'];
+		return draft?.vendorSelection?.selectedVendor ? [draft.vendorSelection.selectedVendor] : [];
 	},
 
 	async handleVendorSelectionChange() {
-		const selected = (typeof NFA_VENDOR_SELECTION__CheckboxGroup1 !== 'undefined' && NFA_VENDOR_SELECTION__CheckboxGroup1.selectedValues) || [];
+		const selected = this._getSelectedVendors();
 		const draft = await this.prepare(false);
+		const wasSplit = !!draft.vendorSelection?.multiNFA;
+		const mustDisableSplit = wasSplit && selected.length !== 1;
+		const multiNFA = wasSplit && !mustDisableSplit;
 		await this._persistDraft({
 			...draft,
 			vendorSelection: {
 				...(draft.vendorSelection || {}),
 				selectedVendors: selected,
-				selectedVendor: selected[0] || null
+				selectedVendor: selected[0] || null,
+				multiNFA,
+				awardScenario: multiNFA ? 'Split into Multiple NFAs' :
+				selected.length > 1 ? 'Multiple Vendor Award' :
+				selected.length === 1 ? 'Single Vendor Award' : '',
+				allocations: multiNFA ? (draft.vendorSelection?.allocations || []) : []
 			}
 		});
+		if (mustDisableSplit) {
+			resetWidget('NFA_VENDOR_SELECTION__MultiNFASwitch');
+			showAlert('Multi-NFA Split is available only when a single vendor is selected.', 'warning');
+		}
+		return true;
 	},
 
 	_money(value) {
@@ -267,34 +279,34 @@ export default {
 			return false;
 		}
 	},
-async saveDocumentDraft() {
-	try {
-		const draft = await this.prepare(false);
-		await this._persistDraft({ ...draft, status: 'DOCUMENT_UPLOAD_DRAFT', currentStep: 2 });
+	async saveDocumentDraft() {
+		try {
+			const draft = await this.prepare(false);
+			await this._persistDraft({ ...draft, status: 'DOCUMENT_UPLOAD_DRAFT', currentStep: 2 });
 
-		// Retrieve current uploaded docs store or default to an empty object
-		let currentUploaded = appsmith.store.nfaUploadedDocs || {};
+			// Retrieve current uploaded docs store or default to an empty object
+			let currentUploaded = appsmith.store.nfaUploadedDocs || {};
 
-		// Check if files are selected in the file picker and set status to true
-		if (NFA_DOCUMENT_UPLOAD__fp_CommercialComparison.files?.length > 0) {
-			currentUploaded.commercialComparison = true;
+			// Check if files are selected in the file picker and set status to true
+			if (NFA_DOCUMENT_UPLOAD__fp_CommercialComparison.files?.length > 0) {
+				currentUploaded.commercialComparison = true;
+			}
+
+			// Add additional file pickers here if needed, e.g.:
+			// if (NFA_DOCUMENT_UPLOAD__fp_TechnicalEvaluation.files?.length > 0) {
+			// 	currentUploaded.technicalEvaluation = true;
+			// }
+
+			// Persist the updated statuses to Appsmith store
+			await storeValue('nfaUploadedDocs', currentUploaded);
+
+			showAlert('Document draft saved successfully.', 'success');
+			return true;
+		} catch (e) {
+			showAlert('Unable to save your changes. Please try again.', 'error');
+			return false;
 		}
-
-		// Add additional file pickers here if needed, e.g.:
-		// if (NFA_DOCUMENT_UPLOAD__fp_TechnicalEvaluation.files?.length > 0) {
-		// 	currentUploaded.technicalEvaluation = true;
-		// }
-
-		// Persist the updated statuses to Appsmith store
-		await storeValue('nfaUploadedDocs', currentUploaded);
-
-		showAlert('Document draft saved successfully.', 'success');
-		return true;
-	} catch (e) {
-		showAlert('Unable to save your changes. Please try again.', 'error');
-		return false;
-	}
-},
+	},
 	async submitDocuments() {
 		try {
 			const draft = await this.prepare(false);
@@ -401,66 +413,77 @@ async saveDocumentDraft() {
 
 	async handleMultiNFAToggle() {
 		try {
-			const draft = await this.prepare(false);
 			const selected = this._getSelectedVendors();
 			const multiNFA = typeof NFA_VENDOR_SELECTION__MultiNFASwitch !== 'undefined'
-			? !!NFA_VENDOR_SELECTION__MultiNFASwitch.isSwitchedOn
-			: true;
-			let allocations = draft?.vendorSelection?.allocations || [];
-			// The first NFA allocation card is always visible in the original UI.
-			if (!allocations.length) allocations = [{ sequence: 1, amount: '' }];
-			if (!multiNFA) allocations = [allocations[0] || { sequence: 1, amount: '' }];
-			const awardScenario = multiNFA
-			? 'Split into Multiple NFAs'
-			: (selected.length > 1 ? 'Multiple Vendor Award' : (selected.length === 1 ? 'Single Vendor Award' : ''));
+			? !!NFA_VENDOR_SELECTION__MultiNFASwitch.isSwitchedOn : false;
+			const draft = await this.prepare(false);
+			if (multiNFA && selected.length !== 1) {
+				await this._persistDraft({
+					...draft,
+					vendorSelection: {
+						...(draft.vendorSelection || {}), selectedVendors: selected,
+						selectedVendor: selected[0] || null, multiNFA: false,
+						awardScenario: selected.length > 1 ? 'Multiple Vendor Award' :
+						selected.length === 1 ? 'Single Vendor Award' : '', allocations: []
+					}
+				});
+				resetWidget('NFA_VENDOR_SELECTION__MultiNFASwitch');
+				showAlert('Please select a single vendor to continue.', 'warning');
+				return false;
+			}
+			// The demo has four existing allocation inputs: start with two NFAs on split.
+			let allocations = multiNFA ? (draft.vendorSelection?.allocations || []) : [];
+			if (multiNFA && allocations.length < 2) {
+				allocations = [{ sequence: 1, amount: '' }, { sequence: 2, amount: '' }];
+			}
 			await this._persistDraft({
 				...draft,
 				vendorSelection: {
-					...(draft.vendorSelection || {}),
-					selectedVendors: selected,
-					selectedVendor: selected[0] || 'ARCHICLAD FACADES LLP',
+					...(draft.vendorSelection || {}), selectedVendors: selected,
+					selectedVendor: selected[0] || null,
 					multiNFA,
-					awardScenario,
+					awardScenario: multiNFA ? 'Split into Multiple NFAs' :
+					selected.length > 1 ? 'Multiple Vendor Award' :
+					selected.length === 1 ? 'Single Vendor Award' : '',
 					allocations
 				}
 			});
 			return true;
 		} catch (e) {
-			showAlert('Unable to save your changes. Please try again.', 'error');
+			showAlert('Unable to update award scenario. Please try again.', 'error');
 			return false;
 		}
 	},
-
 	async addSplitAllocation() {
 		const selected = this._getSelectedVendors();
 		const multiNFA = typeof NFA_VENDOR_SELECTION__MultiNFASwitch !== 'undefined'
-		? !!NFA_VENDOR_SELECTION__MultiNFASwitch.isSwitchedOn
-		: true;
+		? !!NFA_VENDOR_SELECTION__MultiNFASwitch.isSwitchedOn :
+		!!this.getCurrentDraft()?.vendorSelection?.multiNFA;
 		if (!multiNFA) return false;
-		if (!selected || selected.length === 0) {
-			showAlert('Please select at least one vendor to continue.', 'warning');
+		if (selected.length !== 1) {
+			showAlert('Please select a single vendor to continue.', 'warning');
 			return false;
 		}
 		try {
 			const draft = await this.prepare(false);
-			let allocations = this._readSplitAllocations();
-			if (allocations.length >= 4) { showAlert('Four split rows are already available in the demo.', 'info'); return false; }
+			const allocations = this._readSplitAllocations();
+			if (allocations.length >= 4) {
+				showAlert('This mock screen supports up to four NFA allocations.', 'info');
+				return false;
+			}
 			allocations.push({ sequence: allocations.length + 1, amount: '' });
 			await this._persistDraft({
 				...draft,
 				vendorSelection: {
-					...(draft.vendorSelection || {}),
-					selectedVendors: selected,
-					selectedVendor: selected[0] || 'ARCHICLAD FACADES LLP',
-					multiNFA: true,
-					awardScenario: 'Split into Multiple NFAs',
-					allocations
+					...(draft.vendorSelection || {}), selectedVendors: selected,
+					selectedVendor: selected[0], multiNFA: true,
+					awardScenario: 'Split into Multiple NFAs', allocations
 				}
 			});
 			showAlert('Split NFA row added.', 'success');
 			return true;
 		} catch (e) {
-			showAlert('Unable to save your changes. Please try again.', 'error');
+			showAlert('Unable to add NFA allocation.', 'error');
 			return false;
 		}
 	},
@@ -469,21 +492,29 @@ async saveDocumentDraft() {
 		try {
 			const draft = await this.prepare(false);
 			let allocations = this._readSplitAllocations();
-			if (allocations.length <= 1) allocations = [{ sequence: 1, amount: '' }];
-			else allocations.splice(index, 1);
-			allocations = allocations.map((a, idx) => ({ sequence: idx + 1, amount: a.amount }));
+			if (allocations.length <= 2) {
+				showAlert('Multi-NFA Split requires at least two NFA allocations.', 'warning');
+				return false;
+			}
+			if (index < 0 || index >= allocations.length) return false;
+			allocations.splice(index, 1);
+			allocations = allocations.map((a, i) => ({ sequence: i + 1, amount: a.amount }));
 			await this._persistDraft({
 				...draft,
 				vendorSelection: {
-					...(draft.vendorSelection || {}),
-					multiNFA: true,
-					awardScenario: 'Split into Multiple NFAs',
-					allocations
+					...(draft.vendorSelection || {}), multiNFA: true,
+					awardScenario: 'Split into Multiple NFAs', allocations
 				}
 			});
+			// Existing input widgets are reused when rows shift. Reload their defaults
+			// from the updated per-group draft so amounts stay with the right NFA.
+			for (const name of ['NFA_VENDOR_SELECTION__NFAAmount1', 'NFA_VENDOR_SELECTION__NFAAmount2',
+													'NFA_VENDOR_SELECTION__NFAAmount3', 'NFA_VENDOR_SELECTION__NFAAmount4']) {
+				resetWidget(name);
+			}
 			return true;
 		} catch (e) {
-			showAlert('Unable to save your changes. Please try again.', 'error');
+			showAlert('Unable to remove NFA allocation.', 'error');
 			return false;
 		}
 	},
@@ -491,49 +522,79 @@ async saveDocumentDraft() {
 	getAllocationSummary() {
 		const selected = this._getSelectedVendors();
 		const multiNFA = typeof NFA_VENDOR_SELECTION__MultiNFASwitch !== 'undefined'
-		? !!NFA_VENDOR_SELECTION__MultiNFASwitch.isSwitchedOn
-		: !!this.getCurrentDraft()?.vendorSelection?.multiNFA;
+		? !!NFA_VENDOR_SELECTION__MultiNFASwitch.isSwitchedOn :
+		!!this.getCurrentDraft()?.vendorSelection?.multiNFA;
 		if (!multiNFA) {
 			if (!selected.length) return 'Select one or more qualified vendors';
-			return selected.length === 1 ? 'Award Scenario: Single Vendor Award' : 'Award Scenario: Multiple Vendor Award';
+			return selected.length === 1 ? 'Award Scenario: Single Vendor Award' :
+			'Award Scenario: Multiple Vendor Award';
 		}
-		const a = this.getCurrentDraft()?.vendorSelection?.allocations || [];
-		return `Number of NFAs: ${Math.max(1, a.length || 1)}  •  Split allocation must match the selected vendor award value`;
+		if (selected.length !== 1) return 'Select a single vendor for Multi-NFA Split';
+		const allocations = this._readSplitAllocations();
+		const total = allocations.reduce((sum, a) => sum + this._money(a.amount), 0);
+		const award = this._vendorPrice(selected[0]);
+		const balance = award - total;
+		if (allocations.some(a => !String(a.amount).trim())) {
+			return `${allocations.length} NFAs • Enter all split amounts`;
+		}
+		return `${allocations.length} NFAs • ${Math.abs(balance) < 0.005 ? 'Fully allocated' :
+		(balance > 0 ? 'Remaining' : 'Over allocated') + ': ₹ ' + Math.abs(balance).toLocaleString('en-IN')}`;
 	},
 
 	async saveVendor(goNext = false) {
 		const selected = this._getSelectedVendors();
 		const multiNFA = typeof NFA_VENDOR_SELECTION__MultiNFASwitch !== 'undefined'
-		? !!NFA_VENDOR_SELECTION__MultiNFASwitch.isSwitchedOn
-		: !!this.getCurrentDraft()?.vendorSelection?.multiNFA;
-		if (goNext && (!selected || !selected.length)) {
+		? !!NFA_VENDOR_SELECTION__MultiNFASwitch.isSwitchedOn :
+		!!this.getCurrentDraft()?.vendorSelection?.multiNFA;
+		if (goNext && !selected.length) {
 			showAlert('Please select at least one vendor to continue.', 'warning');
+			return false;
+		}
+		if (goNext && multiNFA && selected.length !== 1) {
+			showAlert('Please select a single vendor to continue.', 'warning');
 			return false;
 		}
 		try {
 			const draft = await this.prepare(false);
-			const scenario = multiNFA
-			? 'Split into Multiple NFAs'
-			: (selected.length > 1 ? 'Multiple Vendor Award' : 'Single Vendor Award');
+			const scenario = multiNFA ? 'Split into Multiple NFAs' :
+			selected.length > 1 ? 'Multiple Vendor Award' :
+			selected.length === 1 ? 'Single Vendor Award' : '';
 			let allocations = [];
 			if (multiNFA) {
-				allocations = this._readSplitAllocations();
-				if (allocations.some(x => !String(x.amount).trim())) {
+				const inputs = this._readSplitAllocations();
+				if (goNext && inputs.length < 2) {
+					showAlert('Please add at least two NFA allocations.', 'warning');
+					return false;
+				}
+				if (goNext && inputs.some(a => !String(a.amount).trim())) {
 					showAlert('Please enter an award amount.', 'warning');
 					return false;
 				}
-				allocations = allocations.map(x => ({ sequence: x.sequence, amount: this._money(x.amount) }));
+				if (goNext && inputs.some(a => !Number.isFinite(Number(a.amount)) || Number(a.amount) <= 0)) {
+					showAlert('Please enter a valid positive award amount.', 'warning');
+					return false;
+				}
+				// The mock only has quoted prices; use the selected vendor's quoted value
+				// as the award total until a final negotiated amount is supplied.
+				const awardPaise = Math.round(this._vendorPrice(selected[0]) * 100);
+				const splitPaise = inputs.reduce((sum, a) => sum + Math.round(this._money(a.amount) * 100), 0);
+				if (goNext && splitPaise !== awardPaise) {
+					showAlert('The split award amounts must match the total award value.', 'warning');
+					return false;
+				}
+				// Keep incomplete inputs intact on Save Draft; validate only on Continue.
+				allocations = inputs.map(a => ({
+					sequence: a.sequence,
+					amount: String(a.amount).trim() === '' ? '' : this._money(a.amount)
+				}));
 			}
-			const vendorSelection = {
-				selectedVendors: selected,
-				selectedVendor: selected[0] || null,
-				multiNFA,
-				awardScenario: scenario,
-				allocations
-			};
 			await this._persistDraft({
 				...draft,
-				vendorSelection,
+				vendorSelection: {
+					...(draft.vendorSelection || {}),
+					selectedVendors: selected, selectedVendor: selected[0] || null,
+					multiNFA, awardScenario: scenario, allocations
+				},
 				status: goNext ? 'REVIEW_NFA' : 'VENDOR_SELECTION_DRAFT',
 				currentStep: goNext ? 5 : 4
 			});
@@ -545,7 +606,6 @@ async saveDocumentDraft() {
 			return false;
 		}
 	},
-
 	getDocumentNamesSummary() {
 		const docs = this.getCurrentDraft()?.documents || appsmith.store.nfaDraft?.documents || {};
 		const names = Object.values(docs).flat().map(x => x?.name).filter(Boolean);
@@ -609,8 +669,7 @@ async saveDocumentDraft() {
 				OtherTerms1:NFA_REVIEW__OtherTerms1.text,
 				OtherTerms2:NFA_REVIEW__OtherTerms2.text,
 				OtherTerms3:NFA_REVIEW__OtherTerms3.text,
-				OtherTerms4:NFA_REVIEW__OtherTerms4.text,
-				OtherTerms5:NFA_REVIEW__OtherTerms5.text
+				OtherTerms4:NFA_REVIEW__OtherTerms4.text
 			};
 			await storeValue('nfaDraft', { ...draft, review:{ ...(draft.review || {}), ...review }, status:goNext ? 'APPROVER_CONFIRMATION' : 'REVIEW_DRAFT', currentStep:goNext ? 6 : 5 }, true);
 			if (goNext) await this._setInnerPage('nfa_approver_confirmation');
@@ -623,13 +682,16 @@ async saveDocumentDraft() {
 	},
 
 	_normaliseApprovers(list) {
-		return (list || []).filter(a => a && String(a.name || '').trim()).map((a,i) => ({ ...a, name:String(a.name).trim(), level:i+1 }));
+		return (Array.isArray(list) ? list : [])
+			.filter(a => a && String(a.name || '').trim())
+			.map((a, i) => ({ ...a, name: String(a.name).trim(), level: i + 1 }));
 	},
 
-	getApprover(index) { return (appsmith.store.nfaDraft?.approvers || [])[index] || null; },
+
+	getApprover(index) { return (this.getCurrentDraft()?.approvers || appsmith.store.nfaDraft?.approvers || [])[index] || null; },
 
 	getApproverSummary() {
-		const list = this._normaliseApprovers(appsmith.store.nfaDraft?.approvers || []);
+		const list = this._normaliseApprovers(this.getCurrentDraft()?.approvers || []);
 		return list.length ? list.map(a => `Level ${a.level}: ${a.name}`).join('   •   ') : 'No approvers configured yet.';
 	},
 
@@ -657,6 +719,7 @@ async saveDocumentDraft() {
 		}
 		try {
 			const draft = await this.prepare(false);
+			if (draft.status === 'COMPLETED') { showAlert('Submitted NFAs are read-only.', 'warning'); return false; }
 			let list = this._normaliseApprovers(draft.approvers || []);
 			const index = Number(level) - 1;
 			if (index < 0 || index > list.length) return false;
@@ -665,7 +728,7 @@ async saveDocumentDraft() {
 				return false;
 			}
 			const replacing = !!list[index];
-			if (replacing) list[index] = { ...list[index], name, role:list[index].role || 'Buyer Specified' };
+			if (replacing) list[index] = { ...list[index], name, role:'Buyer Specified' };
 			else list.push({ level:index + 1, name, role:'Buyer Specified' });
 			list = this._normaliseApprovers(list);
 			await this._persistDraft({ ...draft, approvers:list });
@@ -689,6 +752,7 @@ async saveDocumentDraft() {
 	async deleteApprover(index = 0) {
 		try {
 			const draft = await this.prepare(false);
+			if (draft.status === 'COMPLETED') { showAlert('Submitted NFAs are read-only.', 'warning'); return false; }
 			let list = this._normaliseApprovers(draft.approvers || []);
 			if (!list[index]) return false;
 			list.splice(index,1);
@@ -699,9 +763,8 @@ async saveDocumentDraft() {
 			return true;
 		} catch(e){ return false; }
 	},
-
 	async deleteLastApprover() {
-		const list=this._normaliseApprovers(appsmith.store.nfaDraft?.approvers || []);
+		const list=this._normaliseApprovers(this.getCurrentDraft()?.approvers || []);
 		if (!list.length) return false;
 		return this.deleteApprover(list.length-1);
 	},
@@ -709,6 +772,7 @@ async saveDocumentDraft() {
 	async saveApproverDraft() {
 		try {
 			const draft=await this.prepare(false);
+			if (draft.status === 'COMPLETED') { showAlert('Submitted NFAs are read-only.', 'warning'); return false; }
 			const list=this._normaliseApprovers(draft.approvers);
 			await this._persistDraft({...draft,approvers:list,status:'APPROVER_DRAFT',currentStep:6});
 			showAlert('Approval hierarchy draft saved.','success');
@@ -721,11 +785,31 @@ async saveDocumentDraft() {
 
 	async submitForApproval() {
 		try {
-			const draft=await this.prepare(false); const list=this._normaliseApprovers(draft.approvers);
-			if (!list.length) { showAlert('Please add at least one approver.','warning'); return false; }
-			const updated={...draft,status:'COMPLETED',currentStep:7,submissionStatus:'PENDING_APPROVAL',approvers:list,approvalStatus:{currentApprover:list[0].name,completed:0,pending:list.length},poStatus:'Not Created'};
-			await this._persistDraft(updated); await this._setInnerPage('nfa_submitted'); showAlert('NFA submitted successfully.','success'); return true;
-		} catch(e){ showAlert('NFA submission failed. Please try again.','error'); return false; }
+			const draft = await this.prepare(false);
+			if (draft.status === 'COMPLETED') { showAlert('This mock NFA has already been submitted.', 'info'); return false; }
+			const list = this._normaliseApprovers(draft.approvers);
+			if (!list.length) { showAlert('Please add at least one approver.', 'warning'); return false; }
+			if (this._approversHaveDuplicates(list)) {
+				showAlert('This approver is already assigned. Please review the approval hierarchy.', 'warning');
+				return false;
+			}
+			const expected = this.getMockAribaLevelCount();
+			if (list.length !== expected) {
+				showAlert(`Mock Ariba approval hierarchy requires ${expected} level(s); you have ${list.length}. Add or remove approvers before continuing.`, 'warning');
+				return false;
+			}
+			// Mock only: do not claim that Ariba user names were verified, or that a bot ran.
+			const updated = {
+				...draft, status: 'COMPLETED', currentStep: 7, submissionStatus: 'PENDING_APPROVAL',
+				approvers: list,
+				approvalStatus: { currentApprover: list[0].name, completed: 0, pending: list.length },
+				poStatus: 'Not Created', mockSubmission: true, mockFailureType: null
+			};
+			await this._persistDraft(updated);
+			await this._setInnerPage('nfa_submitted');
+			showAlert('Mock NFA submitted. Ariba and bots were not contacted.', 'success');
+			return true;
+		} catch(e) { showAlert('Mock NFA submission could not be completed. Please try again.', 'error'); return false; }
 	},
 
 	async retrySubmission() {

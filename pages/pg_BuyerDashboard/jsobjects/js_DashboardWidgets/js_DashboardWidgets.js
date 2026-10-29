@@ -12,7 +12,13 @@ export default {
 		ALLOC_DONE: { bg: "#fee2e2", text: "#ef4444" },
 		VENDOR_RECOMMENDATION: { bg: "#fffbeb", text: "#d97706" },
 		VENDOR_SELECTION: { bg: "#e0f2fe", text: "#0284c7" },
-		MANUAL_ROUTE: { bg: "#fef2f2", text: "#b91c1c" }
+		MANUAL_ROUTE: { bg: "#fef2f2", text: "#b91c1c" },
+		
+		// Custom status badge colors
+		BID_SUBMISSION: { bg: "#f0fdf4", text: "#16a34a" },          // Soft Green
+		TECHNICAL_EVALUATION: { bg: "#eff6ff", text: "#2563eb" },    // Soft Blue
+		COMMERCIAL_EVALUATION: { bg: "#fdf4ff", text: "#c084fc" },   // Soft Purple
+		PO_RELEASED: { bg: "#f8fafc", text: "#475569" }              // Slate Grey
 	},
 
 	_DEFAULT_BADGE: {
@@ -143,7 +149,8 @@ export default {
 					label: "PR No",
 					type: "link",
 					sortable: true,
-					searchable: true
+					searchable: true,
+					columnWidth: 240 // Further increased width to completely prevent line breaks
 				},
 				{
 					key: "HEADER_NOTE",
@@ -203,14 +210,8 @@ export default {
 					key: "ALLOCATED_BY",
 					label: "Allocated by",
 					type: "text",
-					sortable: false}
-				// },
-				// {
-				// key: "_createdDate",
-				// label: "PR Date",
-				// type: "date",
-				// sortable: true
-				// }
+					sortable: false
+				}
 			],
 
 			data: formattedData
@@ -270,9 +271,9 @@ export default {
 
 		const counts = {
 			manualRoute: allData.filter(r =>
-																	(r.STATUS_CODE || '').toUpperCase().includes("MANUAL") ||
-																	(r.STATUS_NAME || '').toUpperCase().includes("MANUAL")
-																 ).length,
+				(r.STATUS_CODE || '').toUpperCase().includes("MANUAL") ||
+				(r.STATUS_NAME || '').toUpperCase().includes("MANUAL")
+			).length,
 
 			consVendor:
 			this._countByStatus(allData, "PR_CONSISTENCY_CHECK") +
