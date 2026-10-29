@@ -811,6 +811,9 @@ export default {
 			return true;
 		} catch(e) { showAlert('Mock NFA submission could not be completed. Please try again.', 'error'); return false; }
 	},
+	
+	
+	
 
 	async retrySubmission() {
 		const draft=await this.prepare(false);
