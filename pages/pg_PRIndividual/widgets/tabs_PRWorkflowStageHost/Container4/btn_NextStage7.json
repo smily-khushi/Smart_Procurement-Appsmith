@@ -1,12 +1,16 @@
 {
   "borderRadius": "0.375rem",
-  "bottomRow": 106,
+  "bottomRow": 107,
   "boxShadow": "none",
   "buttonColor": "#1d4ed8",
   "buttonVariant": "PRIMARY",
-  "dynamicBindingPathList": [
+  "dynamicBindingPathList": [],
+  "dynamicPropertyPathList": [
     {
       "key": "isDisabled"
+    },
+    {
+      "key": "onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -14,19 +18,19 @@
       "key": "onClick"
     }
   ],
-  "isDisabled": "{{ js_TechnicalEvaluationController.isNextDisabled() }}",
+  "isDisabled": "",
   "isLoading": false,
   "isVisible": true,
   "leftColumn": 52,
   "onClick": "{{ js_TechnicalEvaluationController.proceedToNextStage() }}",
-  "originalBottomRow": 106,
-  "originalTopRow": 101,
+  "originalBottomRow": 107,
+  "originalTopRow": 102,
   "parentId": "xze5cpmeo4",
   "placement": "CENTER",
   "renderMode": "CANVAS",
   "rightColumn": 64,
   "text": "Next →",
-  "topRow": 101,
+  "topRow": 102,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "id5mkybdlo",

@@ -1,0 +1,52 @@
+{
+  "allowedFileTypes": "{{ [\".pdf\", \".xls\", \".xlsx\", \".docx\"] }}",
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 23,
+  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+  "buttonColor": "#3b82f6",
+  "dynamicBindingPathList": [
+    {
+      "key": "allowedFileTypes"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "allowedFileTypes"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "dynamicTyping": true,
+  "fileDataType": "Base64",
+  "files": [],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "fd1cddd83f",
+  "label": "Choose Files",
+  "leftColumn": 25,
+  "maxFileSize": 50,
+  "maxNumFiles": "10",
+  "minWidth": 120,
+  "mobileBottomRow": 38,
+  "mobileLeftColumn": 21,
+  "mobileRightColumn": 37,
+  "mobileTopRow": 29,
+  "needsErrorInfo": false,
+  "originalBottomRow": 27,
+  "originalTopRow": 21,
+  "parentColumnSpace": 3.2570495605468746,
+  "parentId": "otivg5c779",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 40,
+  "selectedFiles": [],
+  "topRow": 17,
+  "type": "FILE_PICKER_WIDGET_V2",
+  "version": 1,
+  "widgetId": "5jgnh9jx7r",
+  "widgetName": "N1_NegotiationRecordsPickerCopy"
+}

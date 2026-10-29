@@ -5,12 +5,12 @@
   "borderColor": "",
   "borderRadius": "0px",
   "borderWidth": 0,
-  "bottomRow": 160,
+  "bottomRow": 122,
   "boxShadow": "none",
   "children": [
     {
       "borderRadius": "0px",
-      "bottomRow": 1260,
+      "bottomRow": 880,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -51,7 +51,7 @@
     },
     {
       "borderRadius": "0px",
-      "bottomRow": 1260,
+      "bottomRow": 880,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -92,7 +92,7 @@
     },
     {
       "borderRadius": "0px",
-      "bottomRow": 1260,
+      "bottomRow": 910,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -174,7 +174,7 @@
     },
     {
       "animateLoading": true,
-      "bottomRow": 1260,
+      "bottomRow": 880,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -203,7 +203,7 @@
       "widgetName": "Canvas_SendRFP_Tab"
     },
     {
-      "bottomRow": 1260,
+      "bottomRow": 960,
       "canExtend": true,
       "dynamicBindingPathList": [],
       "dynamicTriggerPathList": [],
@@ -219,7 +219,7 @@
       "widgetName": "Canvas_BidMonitoring_Tab"
     },
     {
-      "bottomRow": 1260,
+      "bottomRow": 1090,
       "isLoading": false,
       "isVisible": true,
       "leftColumn": 0,
@@ -235,7 +235,7 @@
       "widgetName": "Canvas_TechEval_Tab"
     },
     {
-      "bottomRow": 1260,
+      "bottomRow": 1090,
       "isVisible": true,
       "leftColumn": 0,
       "parentId": "d1zguipsgn",
@@ -252,7 +252,7 @@
     {
       "backgroundColor": "#F5F7FA",
       "borderRadius": "0px",
-      "bottomRow": 1260,
+      "bottomRow": 2480.0000000002005,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -295,7 +295,7 @@
     {
       "backgroundColor": "#F5F7FA",
       "borderRadius": "0px",
-      "bottomRow": 1260,
+      "bottomRow": 1840,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -366,7 +366,8 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 25,
   "needsErrorInfo": false,
-  "originalBottomRow": 160,
+  "onTabSelected": "{{}}",
+  "originalBottomRow": 122,
   "originalTopRow": 34,
   "parentColumnSpace": 20.25,
   "parentId": "0",

@@ -6,9 +6,6 @@
   "dynamicBindingPathList": [
     {
       "key": "text"
-    },
-    {
-      "key": "textColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -24,7 +21,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "bxdr45yrhf",
-  "leftColumn": 42,
+  "leftColumn": 38,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -33,7 +30,7 @@
   "mobileRightColumn": 51,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "originalBottomRow": 5,
+  "originalBottomRow": 6,
   "originalTopRow": 1,
   "overflow": "NONE",
   "parentColumnSpace": 13.0389404296875,
@@ -41,11 +38,11 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 51,
+  "rightColumn": 45,
   "shouldTruncate": false,
   "text": "{{ js_NFAController.getDocumentUploadStatus(\"negotiationRecords\", NFA_DOCUMENT_UPLOAD__fp_NegotiationRecords.files) }}",
   "textAlign": "RIGHT",
-  "textColor": "{{ appsmith.store.nfaDraft?.documents?.negotiationRecords?.length ? \"#15803d\" : (NFA_DOCUMENT_UPLOAD__fp_NegotiationRecords.files?.length ? \"#92400e\" : \"#64748b\") }}",
+  "textColor": "#64748b",
   "topRow": 1,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",

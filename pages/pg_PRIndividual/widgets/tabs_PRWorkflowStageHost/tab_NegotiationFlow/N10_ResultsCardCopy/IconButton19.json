@@ -1,0 +1,40 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "SECONDARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "iconName": "briefcase",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "d3m6f8v3mp",
+  "leftColumn": 2,
+  "minWidth": 50,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 6,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 15.3095703125,
+  "parentId": "7lh52u0p8n",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 6,
+  "topRow": 1,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "s70oe9rw2e",
+  "widgetName": "IconButton19"
+}

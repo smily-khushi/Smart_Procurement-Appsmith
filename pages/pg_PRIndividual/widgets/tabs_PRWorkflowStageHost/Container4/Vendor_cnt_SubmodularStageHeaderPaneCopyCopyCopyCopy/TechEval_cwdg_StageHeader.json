@@ -1,6 +1,6 @@
 {
   "borderRadius": "0px",
-  "bottomRow": 10,
+  "bottomRow": 12,
   "boxShadow": "none",
   "defaultModel": "{{\n  {\n    phaseBadge: \"STAGE 07 - TECHNICAL EVALUATION\",\n    roundPill: js_TechnicalEvaluationController.getRoundBadgeText(),\n    title: js_TechnicalEvaluationController.getGroupName(),\n    subtitle: js_TechnicalEvaluationController.getSubtitleText(),\n    rightBadge: js_TechnicalEvaluationController.getStatusBadgeText()\n  }\n}}",
   "dynamicBindingPathList": [
@@ -8,7 +8,7 @@
       "key": "defaultModel"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "onConversationHistory"
@@ -28,8 +28,6 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onConversationHistory": "{{showModal(mdl_ConversationalHistory.name)}}",
-  "originalBottomRow": 10,
-  "originalTopRow": 0,
   "parentId": "tzfvceqn4z",
   "renderMode": "CANVAS",
   "rightColumn": 64,

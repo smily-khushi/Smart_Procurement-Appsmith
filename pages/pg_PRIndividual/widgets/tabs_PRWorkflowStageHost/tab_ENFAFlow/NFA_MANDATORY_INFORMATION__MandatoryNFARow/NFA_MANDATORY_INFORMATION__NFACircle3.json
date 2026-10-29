@@ -4,7 +4,7 @@
   "borderRadius": "18px",
   "bottomRow": 4.8,
   "dynamicBindingPathList": [],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "fontSize"
@@ -26,8 +26,6 @@
   "mobileRightColumn": 24.3,
   "mobileTopRow": 0.8,
   "needsErrorInfo": false,
-  "originalBottomRow": 4.200000000000728,
-  "originalTopRow": 0.8,
   "overflow": "NONE",
   "parentColumnSpace": 13.0389404296875,
   "parentId": "gvaugq7ftn",

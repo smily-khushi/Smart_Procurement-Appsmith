@@ -2,9 +2,10 @@
   "animateLoading": true,
   "backgroundColor": "#2563EB",
   "borderRadius": "999px",
+  "borderWidth": "1",
   "bottomRow": 5.2,
   "dynamicBindingPathList": [],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "fontSize"
@@ -26,8 +27,6 @@
   "mobileRightColumn": 38.48571428571429,
   "mobileTopRow": 1.2,
   "needsErrorInfo": false,
-  "originalBottomRow": 4.599999999998545,
-  "originalTopRow": 1.2,
   "overflow": "NONE",
   "parentColumnSpace": 13.0389404296875,
   "parentId": "iy457x2gy2",

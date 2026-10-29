@@ -2,7 +2,7 @@
   "animateLoading": true,
   "backgroundColor": "",
   "borderRadius": "0px",
-  "bottomRow": 8,
+  "bottomRow": 5,
   "dynamicBindingPathList": [
     {
       "key": "text"

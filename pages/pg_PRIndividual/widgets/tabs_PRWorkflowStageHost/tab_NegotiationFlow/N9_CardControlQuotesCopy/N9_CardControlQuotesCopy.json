@@ -1,0 +1,91 @@
+{
+  "animateLoading": true,
+  "backgroundColor": "#ecf4fe",
+  "borderColor": "#E2E8F0",
+  "borderRadius": "10px",
+  "borderWidth": "1",
+  "bottomRow": 57,
+  "boxShadow": "0px 1px 3px rgba(0,0,0,0.04)",
+  "children": [
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 280,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "5318c76e2d",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 100,
+      "minWidth": 450,
+      "mobileBottomRow": 300,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 475.5,
+      "mobileTopRow": 0,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "dl7f3xad4w",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 475.5,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "9feebyke9a",
+      "widgetName": "N9_CardControlQuotes_CanvasCopy"
+    }
+  ],
+  "containerStyle": "card",
+  "dynamicBindingPathList": [],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "backgroundColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "stretch",
+  "isCanvas": true,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ba55d26391",
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 10,
+  "minWidth": 450,
+  "mobileBottomRow": 63,
+  "mobileLeftColumn": 3,
+  "mobileRightColumn": 31,
+  "mobileTopRow": 33,
+  "needsErrorInfo": false,
+  "originalBottomRow": 57,
+  "originalTopRow": 29,
+  "parentColumnSpace": 19.8125,
+  "parentId": "7yabe0p6j5",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 30,
+  "shouldScrollContents": false,
+  "topRow": 29,
+  "type": "CONTAINER_WIDGET",
+  "version": 1,
+  "widgetId": "dl7f3xad4w",
+  "widgetName": "N9_CardControlQuotesCopy"
+}

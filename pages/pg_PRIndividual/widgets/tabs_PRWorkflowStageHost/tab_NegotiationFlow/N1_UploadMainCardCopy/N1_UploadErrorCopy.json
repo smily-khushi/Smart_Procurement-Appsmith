@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 50,
+  "bottomRowBeforeCollapse": 50,
+  "dynamicBindingPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "Inter",
+  "fontSize": "0.75rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": "{{appsmith.store.neg_upload_failed === true || appsmith.store.neg_corrupt_file === true}}",
+  "key": "2b36701ab8",
+  "leftColumn": 5,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 65,
+  "mobileLeftColumn": 3,
+  "mobileRightColumn": 57,
+  "mobileTopRow": 61,
+  "needsErrorInfo": false,
+  "originalBottomRow": 50,
+  "originalTopRow": 46,
+  "overflow": "NONE",
+  "parentColumnSpace": 19.5,
+  "parentId": "3hsv9fn62f",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 59,
+  "shouldTruncate": false,
+  "text": "{{appsmith.store.neg_upload_failed === true ? 'The file could not be uploaded. Please try again.' : appsmith.store.neg_corrupt_file === true ? 'The selected file could not be read. Please upload a valid file.' : ''}}",
+  "textAlign": "CENTER",
+  "textColor": "#DC2626",
+  "topRow": 46,
+  "topRowBeforeCollapse": 46,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "5fvg4pd9zb",
+  "widgetName": "N1_UploadErrorCopy"
+}

@@ -3,7 +3,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "0px",
   "borderWidth": "1",
-  "bottomRow": 54,
+  "bottomRow": 29,
   "boxShadow": "none",
   "defaultModel": "{{\n  {\n    selectedSupplierName: js_TechnicalEvaluationController.getSelectedSupplierName(),\n    title: \"Document Compliance — \" + js_TechnicalEvaluationController.getSelectedSupplierName(),\n    subtitle: \"Specification and quality criteria review\",\n    complianceBadge: js_TechnicalEvaluationController.getSelectedSupplierComplianceBadge(),\n    rows: js_TechnicalEvaluationController.getComplianceTableData()\n  }\n}}",
   "dynamicBindingPathList": [
@@ -14,7 +14,7 @@
       "key": "defaultModel"
     }
   ],
-  "dynamicHeight": "FIXED",
+  "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [
     {
       "key": "onResetClick"
@@ -37,11 +37,14 @@
   "mobileTopRow": 28,
   "needsErrorInfo": false,
   "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "originalBottomRow": 54,
+  "originalTopRow": 0,
   "parentColumnSpace": 18.84228515625,
   "parentId": "rxz5txxo08",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 63,
+  "shouldScrollContents": true,
   "srcDoc": {
     "css": "#compliance-container {\n  font-family: \"Inter\", \"Segoe UI\", Arial, sans-serif;\n  width: 100%;\n  color: #1e293b;\n  background: #ffffff;\n}\n\n#compliance-title {\n  margin-bottom: 2px;\n  line-height: 1.2;\n}\n\n.compliance-header {\n  min-width: 0;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  gap: 16px;\n  margin-bottom: 18px;\n}\n\n.compliance-badge {\n  display: none;\n  align-items: center;\n  justify-content: center;\n  padding: 6px 14px;\n  border-radius: 0;\n  font-size: 11px;\n  font-weight: 600;\n  white-space: nowrap;\n  flex-shrink: 0;\n  min-height: 30px;\n}\n\n.compliance-subtitle {\n  font-size: 11px;\n  color: #808080;\n  font-weight: normal;\n  margin-top: 0;\n  margin-bottom: 18px;\n  line-height: 1.3;\n}\n\n#compliance-container h3 {\n  font-size: 17px;\n  font-weight: 600;\n  margin: 0 0 16px;\n  color: #0f172a;\n}\n\n.table-wrapper {\n  margin-top: 0;\n  width: 100%;\n  overflow-x: auto;\n  border: 1px solid #cbd5e1;\n  border-radius: 8px;\n  background: #ffffff;\n}\n\n#compliance-table {\n  width: 100%;\n  border-collapse: collapse;\n  font-size: 13px;\n  background: #ffffff;\n}\n\n/* Table headings */\n#compliance-table thead th {\n  background: #f1f5f9;\n  color: #334155;\n  text-align: left;\n  padding: 14px 16px;\n  font-size: 12px;\n  font-weight: 700;\n  text-transform: uppercase;\n  letter-spacing: 0.35px;\n  border: 1px solid #cbd5e1;\n  white-space: nowrap;\n}\n\n/* Table cells */\n#compliance-table tbody td {\n  padding: 14px 16px;\n  border: 1px solid #e2e8f0;\n  color: #334155;\n  vertical-align: middle;\n  line-height: 1.5;\n}\n\n/* Subtle row hover */\n#compliance-table tbody tr:hover {\n  background: #f8fafc;\n}\n\n/* Sortable headings */\n.sort-button {\n  display: inline-flex;\n  align-items: center;\n  gap: 5px;\n  border: none;\n  background: transparent;\n  color: inherit;\n  font-family: inherit;\n  font-size: inherit;\n  font-weight: inherit;\n  letter-spacing: inherit;\n  cursor: pointer;\n  text-align: left;\n  padding: 0;\n  width: 100%;\n}\n\n.sort-button:hover {\n  color: #2563eb;\n}\n\n.sort-button:focus-visible {\n  outline: 2px solid #2563eb;\n  outline-offset: 3px;\n}\n\n/* Rating */\n#compliance-table tbody td:nth-child(2) {\n  font-weight: 600;\n  color: #0f172a;\n  white-space: nowrap;\n}\n\n/* Documents Found: clickable link style */\n#compliance-table tbody td.documents-cell {\n  color: #2563eb;\n  font-weight: 500;\n  cursor: pointer;\n  min-width: 180px;\n}\n\n#compliance-table tbody td.documents-cell:hover {\n  color: #1d4ed8;\n  text-decoration: underline;\n  background: #eff6ff;\n}\n\n#compliance-table tbody td.documents-cell:focus-visible {\n  outline: 2px solid #2563eb;\n  outline-offset: -3px;\n}\n\n/* TQ Query Status: bold green */\n#compliance-table tbody td:last-child {\n  color: #047857;\n  font-weight: 700;\n  white-space: nowrap;\n}\n\n/* Empty state */\n.empty-message {\n  text-align: center;\n  padding: 24px !important;\n  color: #64748b !important;\n}\n\n/* Responsive layout */\n@media (max-width: 768px) {\n  #compliance-table {\n    min-width: 750px;\n  }\n  #compliance-table thead th,\n  #compliance-table tbody td {\n    padding: 11px 12px;\n  }\n}",
     "html": "<div id=\"compliance-container\">\n  <div class=\"compliance-header\">\n    <div class=\"compliance-heading\">\n      <h3 id=\"compliance-title\"></h3>\n      <h6 class=\"compliance-subtitle\">\n        Specification and quality criteria review\n      </h6>\n    </div>\n\n    <span id=\"compliance-badge\" class=\"compliance-badge\"></span>\n  </div>\n\n  <div class=\"table-wrapper\">\n    <table id=\"compliance-table\">\n      <thead>\n        <tr>\n          <th>Category</th>\n          <th>Rating</th>\n          <th>Documents Found</th>\n          <th>Documents Missing</th>\n          <th>TQ Query Status</th>\n        </tr>\n      </thead>\n      <tbody id=\"compliance-body\"></tbody>\n    </table>\n  </div>\n</div>",

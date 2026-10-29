@@ -267,18 +267,34 @@ export default {
 			return false;
 		}
 	},
-	async saveDocumentDraft() {
-		try {
-			const draft = await this.prepare(false);
-			await this._persistDraft({ ...draft, status: 'DOCUMENT_UPLOAD_DRAFT', currentStep: 2 });
-			showAlert('Document draft saved successfully.', 'success');
-			return true;
-		} catch (e) {
-			showAlert('Unable to save your changes. Please try again.', 'error');
-			return false;
-		}
-	},
+async saveDocumentDraft() {
+	try {
+		const draft = await this.prepare(false);
+		await this._persistDraft({ ...draft, status: 'DOCUMENT_UPLOAD_DRAFT', currentStep: 2 });
 
+		// Retrieve current uploaded docs store or default to an empty object
+		let currentUploaded = appsmith.store.nfaUploadedDocs || {};
+
+		// Check if files are selected in the file picker and set status to true
+		if (NFA_DOCUMENT_UPLOAD__fp_CommercialComparison.files?.length > 0) {
+			currentUploaded.commercialComparison = true;
+		}
+
+		// Add additional file pickers here if needed, e.g.:
+		// if (NFA_DOCUMENT_UPLOAD__fp_TechnicalEvaluation.files?.length > 0) {
+		// 	currentUploaded.technicalEvaluation = true;
+		// }
+
+		// Persist the updated statuses to Appsmith store
+		await storeValue('nfaUploadedDocs', currentUploaded);
+
+		showAlert('Document draft saved successfully.', 'success');
+		return true;
+	} catch (e) {
+		showAlert('Unable to save your changes. Please try again.', 'error');
+		return false;
+	}
+},
 	async submitDocuments() {
 		try {
 			const draft = await this.prepare(false);

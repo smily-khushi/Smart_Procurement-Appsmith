@@ -1,17 +1,17 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
-  "backgroundColor": "transparent",
+  "backgroundColor": "#transparent",
   "borderColor": "",
   "borderRadius": "0px",
   "borderWidth": 0,
-  "bottomRow": 95,
+  "bottomRow": 184,
   "boxShadow": "none",
   "children": [
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 950,
+      "bottomRow": 880,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -35,7 +35,7 @@
       "needsErrorInfo": false,
       "originalBottomRow": 1050,
       "parentColumnSpace": 1,
-      "parentId": "ol2087ao6t",
+      "parentId": "rwcih98gpx",
       "parentRowSpace": 1,
       "positioning": "fixed",
       "renderMode": "CANVAS",
@@ -48,13 +48,13 @@
       "type": "CANVAS_WIDGET",
       "useAutoLayout": false,
       "version": 1,
-      "widgetId": "7y4i4c1av3",
-      "widgetName": "N0_NegotiationPageCanvas"
+      "widgetId": "nztk993758",
+      "widgetName": "N0_NegotiationPageCanvasCopy"
     },
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 1030,
+      "bottomRow": 880,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -78,7 +78,7 @@
       "needsErrorInfo": false,
       "originalBottomRow": 1100,
       "parentColumnSpace": 1,
-      "parentId": "ol2087ao6t",
+      "parentId": "rwcih98gpx",
       "parentRowSpace": 1,
       "positioning": "fixed",
       "renderMode": "CANVAS",
@@ -91,13 +91,13 @@
       "type": "CANVAS_WIDGET",
       "useAutoLayout": false,
       "version": 1,
-      "widgetId": "hiv1ejp371",
-      "widgetName": "N1_NegotiationPageCanvas"
+      "widgetId": "xsbm74tskm",
+      "widgetName": "N1_NegotiationPageCanvasCopy"
     },
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 950,
+      "bottomRow": 890,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -121,7 +121,7 @@
       "needsErrorInfo": false,
       "originalBottomRow": 980,
       "parentColumnSpace": 1,
-      "parentId": "ol2087ao6t",
+      "parentId": "rwcih98gpx",
       "parentRowSpace": 1,
       "positioning": "fixed",
       "renderMode": "CANVAS",
@@ -134,13 +134,13 @@
       "type": "CANVAS_WIDGET",
       "useAutoLayout": false,
       "version": 1,
-      "widgetId": "s98rsinljt",
-      "widgetName": "N2_NegotiationPageCanvas"
+      "widgetId": "bin9psyttf",
+      "widgetName": "N2_NegotiationPageCanvasCopy"
     },
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 1020,
+      "bottomRow": 1030,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -164,7 +164,7 @@
       "needsErrorInfo": false,
       "originalBottomRow": 1260,
       "parentColumnSpace": 1,
-      "parentId": "ol2087ao6t",
+      "parentId": "rwcih98gpx",
       "parentRowSpace": 1,
       "positioning": "fixed",
       "renderMode": "CANVAS",
@@ -177,13 +177,13 @@
       "type": "CANVAS_WIDGET",
       "useAutoLayout": false,
       "version": 1,
-      "widgetId": "m42xcqssr6",
-      "widgetName": "N3_NegotiationPageCanvas"
+      "widgetId": "z5jam2jrab",
+      "widgetName": "N3_NegotiationPageCanvasCopy"
     },
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 1080,
+      "bottomRow": 1040,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -207,7 +207,7 @@
       "needsErrorInfo": false,
       "originalBottomRow": 1320,
       "parentColumnSpace": 1,
-      "parentId": "ol2087ao6t",
+      "parentId": "rwcih98gpx",
       "parentRowSpace": 1,
       "positioning": "fixed",
       "renderMode": "CANVAS",
@@ -220,13 +220,13 @@
       "type": "CANVAS_WIDGET",
       "useAutoLayout": false,
       "version": 1,
-      "widgetId": "1e0s24pjye",
-      "widgetName": "N4_NegotiationPageCanvas"
+      "widgetId": "82433o6git",
+      "widgetName": "N4_NegotiationPageCanvasCopy"
     },
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 1410,
+      "bottomRow": 1240,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -250,7 +250,7 @@
       "needsErrorInfo": false,
       "originalBottomRow": 1550,
       "parentColumnSpace": 1,
-      "parentId": "ol2087ao6t",
+      "parentId": "rwcih98gpx",
       "parentRowSpace": 1,
       "positioning": "fixed",
       "renderMode": "CANVAS",
@@ -263,13 +263,13 @@
       "type": "CANVAS_WIDGET",
       "useAutoLayout": false,
       "version": 1,
-      "widgetId": "fzjpy2ucdn",
-      "widgetName": "N5_NegotiationPageCanvas"
+      "widgetId": "4n4ebc6jre",
+      "widgetName": "N5_NegotiationPageCanvasCopy"
     },
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 950,
+      "bottomRow": 880,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -293,7 +293,7 @@
       "needsErrorInfo": false,
       "originalBottomRow": 1200,
       "parentColumnSpace": 1,
-      "parentId": "ol2087ao6t",
+      "parentId": "rwcih98gpx",
       "parentRowSpace": 1,
       "positioning": "fixed",
       "renderMode": "CANVAS",
@@ -306,13 +306,13 @@
       "type": "CANVAS_WIDGET",
       "useAutoLayout": false,
       "version": 1,
-      "widgetId": "vp3bp0nbuy",
-      "widgetName": "N6_NegotiationPageCanvas"
+      "widgetId": "e5dm0fdddm",
+      "widgetName": "N6_NegotiationPageCanvasCopy"
     },
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 1340,
+      "bottomRow": 1240,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -336,7 +336,7 @@
       "needsErrorInfo": false,
       "originalBottomRow": 1500,
       "parentColumnSpace": 1,
-      "parentId": "ol2087ao6t",
+      "parentId": "rwcih98gpx",
       "parentRowSpace": 1,
       "positioning": "fixed",
       "renderMode": "CANVAS",
@@ -349,13 +349,13 @@
       "type": "CANVAS_WIDGET",
       "useAutoLayout": false,
       "version": 1,
-      "widgetId": "yte2qkosmg",
-      "widgetName": "N7_NegotiationPageCanvas"
+      "widgetId": "674f40swpm",
+      "widgetName": "N7_NegotiationPageCanvasCopy"
     },
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 1230,
+      "bottomRow": 1010,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -379,7 +379,7 @@
       "needsErrorInfo": false,
       "originalBottomRow": 1420,
       "parentColumnSpace": 1,
-      "parentId": "ol2087ao6t",
+      "parentId": "rwcih98gpx",
       "parentRowSpace": 1,
       "positioning": "fixed",
       "renderMode": "CANVAS",
@@ -392,13 +392,13 @@
       "type": "CANVAS_WIDGET",
       "useAutoLayout": false,
       "version": 1,
-      "widgetId": "5htraksovd",
-      "widgetName": "N8_NegotiationPageCanvas"
+      "widgetId": "u5e4f831wu",
+      "widgetName": "N8_NegotiationPageCanvasCopy"
     },
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 1190,
+      "bottomRow": 1090,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -422,7 +422,7 @@
       "needsErrorInfo": false,
       "originalBottomRow": 1420,
       "parentColumnSpace": 1,
-      "parentId": "ol2087ao6t",
+      "parentId": "rwcih98gpx",
       "parentRowSpace": 1,
       "positioning": "fixed",
       "renderMode": "CANVAS",
@@ -435,13 +435,13 @@
       "type": "CANVAS_WIDGET",
       "useAutoLayout": false,
       "version": 1,
-      "widgetId": "ecn1zud2kn",
-      "widgetName": "N9_NegotiationPageCanvas"
+      "widgetId": "7yabe0p6j5",
+      "widgetName": "N9_NegotiationPageCanvasCopy"
     },
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 950,
+      "bottomRow": 880,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -465,7 +465,7 @@
       "needsErrorInfo": false,
       "originalBottomRow": 1120,
       "parentColumnSpace": 1,
-      "parentId": "ol2087ao6t",
+      "parentId": "rwcih98gpx",
       "parentRowSpace": 1,
       "positioning": "fixed",
       "renderMode": "CANVAS",
@@ -478,22 +478,26 @@
       "type": "CANVAS_WIDGET",
       "useAutoLayout": false,
       "version": 1,
-      "widgetId": "0kabk8m8gq",
-      "widgetName": "N10_NegotiationPageCanvas"
+      "widgetId": "9yrqnjuc7e",
+      "widgetName": "N10_NegotiationPageCanvasCopy"
     }
   ],
   "containerStyle": "card",
   "defaultTab": "{{ ({\n  negotiation_landing: 'Negotiation Landing Page',\n  upload_before_analysis: 'Upload Before Analysis',\n  analysis_in_progress: 'Analysis in Progress',\n  negotiation_ai_assistant: 'Negotiation AI Assistant',\n  reverse_auction_total: 'Reverse Auction Total',\n  reverse_auction_item_wise: 'Reverse Auction Item Wise',\n  japanese_auction_total: 'Japanese Auction Total',\n  japanese_auction_item_wise: 'Japanese Auction Item Wise',\n  rfp_revision: 'RFP Revision',\n  controlled_negotiation: 'Controlled Negotiation',\n  post_first_round: 'Post First Round'\n})[appsmith.store.negotiation_inner_page || 'negotiation_landing'] }}",
   "dynamicBindingPathList": [
     {
-      "key": "defaultTab"
+      "key": "accentColor"
     },
     {
-      "key": "accentColor"
+      "key": "defaultTab"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "backgroundColor"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "events": [],
   "flexLayers": [],
@@ -502,7 +506,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "c1dd5d7bab",
-  "leftColumn": 0,
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 10,
   "minWidth": 450,
@@ -511,8 +515,8 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 95,
-  "originalTopRow": 0,
+  "originalBottomRow": 184,
+  "originalTopRow": 96,
   "parentColumnSpace": 19.5,
   "parentId": "9p4oaqqoef",
   "parentRowSpace": 10,
@@ -528,7 +532,7 @@
       "isVisible": true,
       "label": "Analysis in Progress",
       "positioning": "fixed",
-      "widgetId": "s98rsinljt"
+      "widgetId": "bin9psyttf"
     },
     "controlled_negotiation": {
       "id": "controlled_negotiation",
@@ -536,7 +540,7 @@
       "isVisible": true,
       "label": "Controlled Negotiation",
       "positioning": "fixed",
-      "widgetId": "ecn1zud2kn"
+      "widgetId": "7yabe0p6j5"
     },
     "japanese_auction_item_wise": {
       "id": "japanese_auction_item_wise",
@@ -544,7 +548,7 @@
       "isVisible": true,
       "label": "Japanese Auction Item Wise",
       "positioning": "fixed",
-      "widgetId": "yte2qkosmg"
+      "widgetId": "674f40swpm"
     },
     "japanese_auction_total": {
       "id": "japanese_auction_total",
@@ -552,7 +556,7 @@
       "isVisible": true,
       "label": "Japanese Auction Total",
       "positioning": "fixed",
-      "widgetId": "vp3bp0nbuy"
+      "widgetId": "e5dm0fdddm"
     },
     "negotiation_ai_assistant": {
       "id": "negotiation_ai_assistant",
@@ -560,7 +564,7 @@
       "isVisible": true,
       "label": "Negotiation AI Assistant",
       "positioning": "fixed",
-      "widgetId": "m42xcqssr6"
+      "widgetId": "z5jam2jrab"
     },
     "negotiation_landing": {
       "id": "negotiation_landing",
@@ -568,7 +572,7 @@
       "isVisible": true,
       "label": "Negotiation Landing Page",
       "positioning": "fixed",
-      "widgetId": "7y4i4c1av3"
+      "widgetId": "nztk993758"
     },
     "post_first_round": {
       "id": "post_first_round",
@@ -576,7 +580,7 @@
       "isVisible": true,
       "label": "Post First Round",
       "positioning": "fixed",
-      "widgetId": "0kabk8m8gq"
+      "widgetId": "9yrqnjuc7e"
     },
     "reverse_auction_item_wise": {
       "id": "reverse_auction_item_wise",
@@ -584,7 +588,7 @@
       "isVisible": true,
       "label": "Reverse Auction Item Wise",
       "positioning": "fixed",
-      "widgetId": "fzjpy2ucdn"
+      "widgetId": "4n4ebc6jre"
     },
     "reverse_auction_total": {
       "id": "reverse_auction_total",
@@ -592,7 +596,7 @@
       "isVisible": true,
       "label": "Reverse Auction Total",
       "positioning": "fixed",
-      "widgetId": "1e0s24pjye"
+      "widgetId": "82433o6git"
     },
     "rfp_revision": {
       "id": "rfp_revision",
@@ -600,7 +604,7 @@
       "isVisible": true,
       "label": "RFP Revision",
       "positioning": "fixed",
-      "widgetId": "5htraksovd"
+      "widgetId": "u5e4f831wu"
     },
     "upload_before_analysis": {
       "id": "upload_before_analysis",
@@ -608,12 +612,12 @@
       "isVisible": true,
       "label": "Upload Before Analysis",
       "positioning": "fixed",
-      "widgetId": "hiv1ejp371"
+      "widgetId": "xsbm74tskm"
     }
   },
-  "topRow": 0,
+  "topRow": 96,
   "type": "TABS_WIDGET",
   "version": 3,
-  "widgetId": "ol2087ao6t",
+  "widgetId": "rwcih98gpx",
   "widgetName": "tab_NegotiationFlow"
 }

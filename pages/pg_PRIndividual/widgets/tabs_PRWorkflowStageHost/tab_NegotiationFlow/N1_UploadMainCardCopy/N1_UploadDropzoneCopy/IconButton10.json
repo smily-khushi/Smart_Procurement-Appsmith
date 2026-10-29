@@ -1,0 +1,37 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 12,
+  "boxShadow": "none",
+  "buttonColor": "#1d4ed8",
+  "buttonVariant": "TERTIARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "iconName": "cloud-download",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "n2j2v7gjal",
+  "leftColumn": 27,
+  "minWidth": 50,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 28,
+  "mobileRightColumn": 32,
+  "mobileTopRow": 9,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 13.3482666015625,
+  "parentId": "otivg5c779",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 36,
+  "topRow": 4,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "sfh4ypixum",
+  "widgetName": "IconButton10"
+}
