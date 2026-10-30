@@ -5,12 +5,12 @@
   "borderColor": "",
   "borderRadius": "0px",
   "borderWidth": 0,
-  "bottomRow": 290.0000000008763,
+  "bottomRow": 134,
   "boxShadow": "none",
   "children": [
     {
       "borderRadius": "0px",
-      "bottomRow": 2540.000000008763,
+      "bottomRow": 1000,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -51,7 +51,7 @@
     },
     {
       "borderRadius": "0px",
-      "bottomRow": 2540.000000008763,
+      "bottomRow": 1330,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -92,7 +92,7 @@
     },
     {
       "borderRadius": "0px",
-      "bottomRow": 2540.000000008763,
+      "bottomRow": 1000,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -133,7 +133,7 @@
     },
     {
       "borderRadius": "0px",
-      "bottomRow": 2780,
+      "bottomRow": 1450,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -174,7 +174,7 @@
     },
     {
       "animateLoading": true,
-      "bottomRow": 2540.000000008763,
+      "bottomRow": 1000,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -203,7 +203,7 @@
       "widgetName": "Canvas_SendRFP_Tab"
     },
     {
-      "bottomRow": 2540.000000008763,
+      "bottomRow": 1000,
       "canExtend": true,
       "dynamicBindingPathList": [],
       "dynamicTriggerPathList": [],
@@ -219,7 +219,7 @@
       "widgetName": "Canvas_BidMonitoring_Tab"
     },
     {
-      "bottomRow": 2540.000000008763,
+      "bottomRow": 1100,
       "isLoading": false,
       "isVisible": true,
       "leftColumn": 0,
@@ -235,7 +235,7 @@
       "widgetName": "Canvas_TechEval_Tab"
     },
     {
-      "bottomRow": 2540.000000008763,
+      "bottomRow": 1090,
       "isVisible": true,
       "leftColumn": 0,
       "parentId": "d1zguipsgn",
@@ -252,7 +252,7 @@
     {
       "backgroundColor": "#F5F7FA",
       "borderRadius": "0px",
-      "bottomRow": 2540.000000008763,
+      "bottomRow": 2500.0000000103855,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -295,7 +295,7 @@
     {
       "backgroundColor": "#F5F7FA",
       "borderRadius": "0px",
-      "bottomRow": 2540.000000008763,
+      "bottomRow": 1000,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -357,7 +357,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "c7654e8cc8",
-  "leftColumn": 2,
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 10,
   "minWidth": 450,
@@ -367,8 +367,8 @@
   "mobileTopRow": 25,
   "needsErrorInfo": false,
   "onTabSelected": "{{}}",
-  "originalBottomRow": 290.00000000087675,
-  "originalTopRow": 36,
+  "originalBottomRow": 134,
+  "originalTopRow": 34,
   "parentColumnSpace": 20.25,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -459,7 +459,7 @@
       "widgetId": "w0po9s5sdj"
     }
   },
-  "topRow": 36,
+  "topRow": 34,
   "type": "TABS_WIDGET",
   "version": 3,
   "widgetId": "d1zguipsgn",

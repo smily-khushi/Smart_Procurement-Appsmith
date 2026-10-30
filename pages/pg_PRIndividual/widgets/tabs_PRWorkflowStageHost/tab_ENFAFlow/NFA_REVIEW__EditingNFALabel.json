@@ -2,7 +2,7 @@
   "animateLoading": true,
   "backgroundColor": "",
   "borderRadius": "0px",
-  "bottomRow": 18.000000000012868,
+  "bottomRow": 16.000000000014552,
   "dynamicBindingPathList": [
     {
       "key": "text"
@@ -30,8 +30,8 @@
   "mobileRightColumn": 28,
   "mobileTopRow": 14,
   "needsErrorInfo": false,
-  "originalBottomRow": 18.000000000014552,
-  "originalTopRow": 14.000000000012866,
+  "originalBottomRow": 16.000000000014552,
+  "originalTopRow": 12.000000000015767,
   "overflow": "NONE",
   "parentColumnSpace": 13.0389404296875,
   "parentId": "hzqui7iv6b",
@@ -43,7 +43,7 @@
   "text": "{{ '✎  EDITING NFA #' + js_NFAController.getDisplayNfaId() }}",
   "textAlign": "LEFT",
   "textColor": "#2563EB",
-  "topRow": 14.000000000012866,
+  "topRow": 12.000000000015767,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

@@ -5,13 +5,13 @@
   "borderColor": "",
   "borderRadius": "0px",
   "borderWidth": 0,
-  "bottomRow": 252.00000000087627,
+  "bottomRow": 250.00000000103853,
   "boxShadow": "none",
   "children": [
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 2440.0000000087625,
+      "bottomRow": 2420.0000000103855,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -53,7 +53,7 @@
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 2440.0000000087625,
+      "bottomRow": 2420.0000000103855,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -95,7 +95,7 @@
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 2440.0000000087625,
+      "bottomRow": 2420.0000000103855,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -137,7 +137,7 @@
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 2440.0000000087625,
+      "bottomRow": 2420.0000000103855,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -179,7 +179,7 @@
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 2440.0000000087625,
+      "bottomRow": 2420.0000000103855,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -221,7 +221,7 @@
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 2440.0000000087625,
+      "bottomRow": 2420.0000000103855,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -263,7 +263,7 @@
     {
       "backgroundColor": "#F6F8FB",
       "borderRadius": "0px",
-      "bottomRow": 2440.0000000087625,
+      "bottomRow": 2420.0000000103855,
       "boxShadow": "none",
       "canExtend": true,
       "containerStyle": "none",
@@ -332,7 +332,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 252.00000000087675,
+  "originalBottomRow": 250.00000000102227,
   "originalTopRow": 4,
   "parentColumnSpace": 19.5,
   "parentId": "jn1lmd1d0b",
